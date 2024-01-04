@@ -1,0 +1,158 @@
+{
+    "position": "top",
+    "modules-left": ["hyprland/workspaces", "custom/arrow-dark-on-light-right"],
+   "modules-center": ["clock"],
+    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
+        "custom/arrow-light-on-dark-left", "cpu",
+        "custom/arrow-dark-on-light-left", "memory",
+        "custom/arrow-light-on-dark-left", "temperature",
+        "custom/arrow-dark-on-light-left", "backlight",
+        "custom/arrow-light-on-dark-left", "battery",
+        "custom/arrow-dark-on-light-left", "hyprland/language",
+        "custom/arrow-light-on-dark-left", "tray"],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+	"format": "  {icon}  ",
+	"disable-markup" : false,
+        "all-outputs": true,
+	"format-icons": {
+	     "1": "",
+	     "2": "",
+	     "3": "󰻝",
+	     "4": "",
+	     "active": "",
+	     "default": ""
+	},
+    },
+      "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%A, %d %b, %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "left",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#e2cca9'><b>{}</b></span>",
+                "days":       "<span color='#e2cca9'><b>{}</b></span>",
+                "weeks":      "<span color='#b0b846'><b>W{}</b></span>",
+                "weekdays":   "<span color='#e9b143'><b>{}</b></span>",
+                "today":      "<span color='#f28534'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "kitty --class=calcurse -e calcurse",
+            "on-click-middle": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-bluetooth-muted": "<span foreground='#f2594b'> </span>",
+        "format-muted": "<span foreground='#f2594b'></span>",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "default": ["", "", ""]
+        },
+        "tooltip": false,
+        "on-click": "pavucontrol --class=pavu",
+	"on-click-right": "easyeffects",
+	"ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
+    },
+
+    "cpu": {
+        "format": "{usage}% ",
+	    "states": {
+            "warning": 60,
+            "critical": 80
+	    },
+        "tooltip": false,
+        "on-click": "kitty --class=htop -e htop"
+    },
+
+    "memory": {
+        "tooltip": true,
+        "format": "{}% ",
+        "states": {
+            "warning": 60,
+            "critical": 80
+        },
+        "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
+    },
+
+    "temperature": {
+        "tooltip": false,  
+        "critical-threshold": 80,
+        "format": "{temperatureC}°{icon}",
+        "format-icons": ["", "", ""]
+    },
+
+    "backlight": {
+        "tooltip": false,
+        "format": "{percent}% {icon}",
+        "format-icons": [""]
+    },
+
+    "battery": {
+        "tooltip": true,
+        "tooltip-format": "{time}",
+        "states": {
+            "warning": 35,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "hyprland/language": {
+        "format": "{shortDescription}",
+        "tooltip": false 
+    },
+
+    "tray": {
+        "tooltip": false,
+        "spacing": 5
+    },
+
+    "custom/arrow-light-on-bg-left": {
+        "tooltip": false,
+        "format": ""
+    },
+
+    "custom/arrow-dark-on-light-left": {
+        "tooltip": false,
+        "format": ""
+    },
+
+    "custom/arrow-light-on-dark-left": {
+        "tooltip": false,
+        "format": ""
+    },
+
+    "custom/arrow-dark-on-bg-right": {
+        "tooltip": false,
+        "format": ""
+    },
+
+    "custom/arrow-dark-on-light-right": {
+        "tooltip": false,
+        "format": ""
+    },
+
+    "custom/arrow-light-on-dark-right": {
+        "tooltip": false,
+        "format": ""
+    }
+
+}
+
+
