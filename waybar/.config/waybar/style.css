@@ -32,37 +32,8 @@
 }
 
 #workspaces button.visible {
-    background-color: #3c3836;
-}
-
-/*
- * Arrows
- */
-#custom-arrow-light-on-bg-left {
-    font-size: 18px;
-    color: #3c3836;
-    background-color: transparent;
-}
-
-#custom-arrow-dark-on-bg-right {
-    font-size: 18px;
-    color: #32302f;
-    background-color: transparent;
-   
-}
-
-#custom-arrow-light-on-dark-left,
-#custom-arrow-light-on-dark-right {
-    font-size: 18px;
-    color: #3c3836;
-    background: #32302f;
-}
-
-#custom-arrow-dark-on-light-left,
-#custom-arrow-dark-on-light-right {
-    font-size: 18px;
-    color: #32302f;
-    background: #3c3836;
+    background-color: #D79921;
+    color: #1D2021;
 }
 
 /*
@@ -71,22 +42,17 @@
 #network,
 #memory,
 #backlight,
-#language {
-    color: #e2cca9;
-    font-size: 18px;
-    background-color: #32302f;
-    padding: 0 5 0 5;
-}
-
+#language, 
 #cpu,
 #pulseaudio,
 #temperature,
 #battery,
+#network,
 #tray {
-    color: #e2cca9;
+    color: #FBF1C7;
     font-size: 15px;
     background-color: #3c3836;
-    padding: 0 5 0 5;
+    padding: 0 10 0 10;
 }
 
 /*
@@ -112,7 +78,6 @@
 #mode {
     color: #32302f;
     font-size: 15px;
-    background-color: #f2594b;
 }
 
 #clock {
@@ -129,13 +94,11 @@
 }
 
 #pulseaudio.bluetooth {
-    color: #80aa9e;
+    color: #7C6F64;
 }
 
-tooltip {
+#tooltip {
     color: #e2cca9;
     font-size: 13px;
     background-color: #32302f;
 }
-
-

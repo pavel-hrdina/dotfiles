@@ -1,17 +1,21 @@
+/***
+ *        __  ___         _       __            __                                   _____      
+ *       /  |/  /_  __   | |     / /___ ___  __/ /_  ____ ______   _________  ____  / __(_)___ _
+ *      / /|_/ / / / /   | | /| / / __ `/ / / / __ \/ __ `/ ___/  / ___/ __ \/ __ \/ /_/ / __ `/
+ *     / /  / / /_/ /    | |/ |/ / /_/ / /_/ / /_/ / /_/ / /     / /__/ /_/ / / / / __/ / /_/ / 
+ *    /_/  /_/\__, /     |__/|__/\__,_/\__, /_.___/\__,_/_/      \___/\____/_/ /_/_/ /_/\__, /  
+ *           /____/                   /____/                                           /____/   
+ *
+ *    Pavel Hrdina 2024
+ */
 {
     "position": "top",
-    "modules-left": ["hyprland/workspaces", "custom/arrow-dark-on-light-right"],
+    "modules-left": ["hyprland/workspaces"],
    "modules-center": ["clock"],
-    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
-        "custom/arrow-light-on-dark-left", "cpu",
-        "custom/arrow-dark-on-light-left", "memory",
-        "custom/arrow-light-on-dark-left", "temperature",
-        "custom/arrow-dark-on-light-left", "backlight",
-        "custom/arrow-light-on-dark-left", "battery",
-        "custom/arrow-dark-on-light-left", "hyprland/language",
-        "custom/arrow-light-on-dark-left", "tray"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", 
+    "temperature", "battery", "hyprland/language", "tray"],
 
-    "hyprland/workspaces": {
+  "hyprland/workspaces": {
         "disable-scroll": true,
 	"format": "  {icon}  ",
 	"disable-markup" : false,
@@ -23,7 +27,14 @@
 	     "4": "",
 	     "active": "",
 	     "default": ""
-	},
+	  },
+  },
+    "network": {
+        "interval": 5,
+        "format-wifi": "  {essid}", // Icon: wifi
+        "format-ethernet": "  {ifname}", // Icon: ethernet
+        "format-disconnected": "⚠  Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}"
     },
       "clock": {
         "format": "{:%H:%M}",
@@ -47,7 +58,7 @@
             "on-click-middle": "mode",
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
-        }
+        },
     },
 
     "pulseaudio": {
@@ -63,8 +74,8 @@
         },
         "tooltip": false,
         "on-click": "pavucontrol --class=pavu",
-	"on-click-right": "easyeffects",
-	"ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
+	      "on-click-right": "easyeffects",
+	      "ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
     },
 
     "cpu": {
@@ -76,7 +87,6 @@
         "tooltip": false,
         "on-click": "kitty --class=htop -e htop"
     },
-
     "memory": {
         "tooltip": true,
         "format": "{}% ",
@@ -92,12 +102,6 @@
         "critical-threshold": 80,
         "format": "{temperatureC}°{icon}",
         "format-icons": ["", "", ""]
-    },
-
-    "backlight": {
-        "tooltip": false,
-        "format": "{percent}% {icon}",
-        "format-icons": [""]
     },
 
     "battery": {
@@ -119,40 +123,8 @@
     },
 
     "tray": {
-        "tooltip": false,
-        "spacing": 5
+        "icon-size": 24,
+        "spacing": 1
     },
-
-    "custom/arrow-light-on-bg-left": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-dark-on-light-left": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-light-on-dark-left": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-dark-on-bg-right": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-dark-on-light-right": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-light-on-dark-right": {
-        "tooltip": false,
-        "format": ""
-    }
-
+ 
 }
-
-
