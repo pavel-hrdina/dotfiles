@@ -13,8 +13,6 @@
 #!/bin/bash
 iatest=$(expr index "$-" i)
 
-PS1='[\u@\h \W]\$'
-
 test -s ~/.alias && . ~/.alias || true
 
 # set PATH so it includes user's private ~/.local/bin if it exists
@@ -75,3 +73,14 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 #######################################################
 # GENERAL ALIAS'S
 #######################################################
+
+gcom() {
+	git add .
+	git commit -S -m "$1" 
+}
+
+lazyg() {
+	git add .
+	git commit -S -m "$1"
+	git push
+}
