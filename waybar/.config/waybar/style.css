@@ -2,16 +2,19 @@
     border: none;
     border-radius: 0;
     font-family: JetBrainsMono Nerd Font;
+    font-weight: bold;
+    min-height: 0;
 }
 
-#waybar {
+window#waybar{
     background-color: rgba(50, 48, 47, 0.8);
 }
 
 #workspaces button {
     color: #e2cca9;
     background-color: #32302f;
-    font-size: 13px;
+    padding: 5px;
+    font-size: 20px;
 }
 
 #workspaces button:hover,
@@ -51,9 +54,10 @@
 #tray {
     color: #FBF1C7;
     font-size: 15px;
-    background-color: #3c3836;
     padding: 0 10 0 10;
+
 }
+
 
 /*
  * Warning plugins state

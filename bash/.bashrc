@@ -13,6 +13,8 @@
 #!/bin/bash
 iatest=$(expr index "$-" i)
 
+PS1='[\u@\h \W]\$'
+
 test -s ~/.alias && . ~/.alias || true
 
 # set PATH so it includes user's private ~/.local/bin if it exists
