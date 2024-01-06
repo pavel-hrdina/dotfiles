@@ -34,7 +34,6 @@ if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
 
-
 # Check the window size after each command and, if necessary, update the values of LINES and COLUMNS
 shopt -s checkwinsize
 
