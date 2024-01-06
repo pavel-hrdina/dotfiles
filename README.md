@@ -6,9 +6,9 @@
 
 ![desktop](https://images2.imgbox.com/f0/6c/Wbog0c5Z_o.png)
 
-Using openSUSE Tumbleweed 
+## Installation
 
-```bash
-# intall packages: TODO
-sudo zypper in ..
-```
+> [!IMPORTANT]
+I have not tested this configuration on Linux distributions other than openSUSE Trumbleweed, so use it with caution, but it should work.
+
+TODO
