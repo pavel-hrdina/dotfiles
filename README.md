@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>My dotfiles</h1>
+    <h1>Pavels Gruvbox Hyprland</h1>
     <h3></h3>
 </div>
 
