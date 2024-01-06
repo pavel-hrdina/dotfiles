@@ -1,14 +1,10 @@
-# Sample .bashrc for SUSE Linux
-# Copyright (c) SUSE Software Solutions Germany GmbH
-
-# There are 3 different types of shells in bash: the login shell, normal shell
-# and interactive shell. Login shells read ~/.profile and interactive shells
-# read ~/.bashrc; in our setup, /etc/profile sources ~/.bashrc - thus all
-# settings made here will also take effect in a login shell.
-#
-# NOTE: It is recommended to make language settings in ~/.profile rather than
-# here, since multilingual X sessions would not work properly if LANG is over-
-# ridden in every subshell.
+#      ____  ___   _____ __  ______  ______
+#     / __ )/   | / ___// / / / __ \/ ____/
+#    / __  / /| | \__ \/ /_/ / /_/ / /     
+#   / /_/ / ___ |___/ / __  / _, _/ /___   
+#  /_____/_/  |_/____/_/ /_/_/ |_|\____/   
+#                                          
+#  Pavel Hrdina 2024
 
 #!/bin/bash
 iatest=$(expr index "$-" i)
@@ -76,11 +72,11 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 gcom() {
 	git add .
-	git commit -S -m "$1" 
+	git commit -S -m "$1: openSUSE" 
 }
 
 lazyg() {
 	git add .
-	git commit -S -m "$1"
+	git commit -S -m "$1: openSUSE"
 	git push
 }
