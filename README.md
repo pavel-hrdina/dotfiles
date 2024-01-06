@@ -11,4 +11,4 @@
 > [!IMPORTANT]
 I have not tested this configuration on Linux distributions other than openSUSE Trumbleweed, so use it with caution, but it should work.
 
-TODO
+TODO: Create an installation script
