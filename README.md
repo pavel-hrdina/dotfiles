@@ -1,5 +1,7 @@
 # My dotfiles
 
+![screenshot](https://imgbox.com/Wbog0c5Z)
+
 Using openSUSE Tumbleweed 
 
 ```bash
