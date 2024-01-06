@@ -1,6 +1,6 @@
 # My dotfiles
 
-![desktop](https://thumbs2.imgbox.com/f0/6c/Wbog0c5Z_t.png)
+![desktop](https://images2.imgbox.com/f0/6c/Wbog0c5Z_o.png)
 
 Using openSUSE Tumbleweed 
 
