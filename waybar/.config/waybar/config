@@ -16,7 +16,7 @@
     "temperature", "battery", "hyprland/language", "tray"],
 
   "hyprland/workspaces": {
-        "disable-scroll": true,
+        "disable-scroll": false,
 	"format": "  {icon}  ",
 	"disable-markup" : false,
         "all-outputs": true,
