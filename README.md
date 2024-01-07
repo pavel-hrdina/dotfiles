@@ -14,8 +14,23 @@ The script is made for openSUSE Tumbleweed. I didn't include Nvidia support.
 > [!CAUTION]
 > Examine the script thoroughly before executing it on your system, as it may cause harm to your system.
 > I have not tested this configuration on Linux distributions other than openSUSE Trumbleweed, so use it
-> with caution, but it should work.
+> with caution, but it should work. 
 
-Install openSUSE Tumbleweed as a server or a desktop environment with GNOME or KDE, both should work with the script.
+> [!NOTE]
+> I am using GNU Stow, because it requires the least hustle to use, if you never used it before I recommend to read about it [here](https://www.gnu.org/software/stow/).
 
-TODO: Create an installation script
+Install openSUSE Tumbleweed as a server or a desktop environment with GNOME or KDE, both should work with the script. using it on previously 
+installed desktop should work but will change whatever you currently have (gtk/qt theming, shell, sddm, grub, etc) and is at your own risk.
+
+Clone and execute -
+
+```shell
+sudo zypper up
+git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles
+# TODO: Create an installation script
+```
+
+> [!TIP]
+> Don't hesitate to modify the script
+
+
