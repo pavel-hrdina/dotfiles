@@ -84,4 +84,4 @@ lazyg() {
 # GENERAL ALIAS'S
 #######################################################
 # Map vim to nvim
-vim=nvim
+alias vim=nvim

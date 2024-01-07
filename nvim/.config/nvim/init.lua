@@ -9,10 +9,15 @@
 
 
 -- Set <space> as the leader key
+ 
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+-- Set spellchecking to true
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
