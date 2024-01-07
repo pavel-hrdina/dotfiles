@@ -85,3 +85,6 @@ lazyg() {
 #######################################################
 # Map vim to nvim
 alias vim=nvim
+
+# POKEMON!
+pokemon-colorscripts --no-title -n kangaskhan
