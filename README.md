@@ -17,7 +17,7 @@ The script is made for openSUSE Tumbleweed. I didn't include Nvidia support.
 > with caution, but it should work. 
 
 > [!NOTE]
-> I am using GNU Stow, because it requires the least hustle to use, if you never used it before I recommend to read about it [here](https://www.gnu.org/software/stow/).
+> I am using GNU Stow, because it requires the least hustle to use, if you never used it before I recommend reading about it [here](https://www.gnu.org/software/stow/).
 
 Install openSUSE Tumbleweed as a server or a desktop environment with GNOME or KDE, both should work with the script. using it on previously 
 installed desktop should work but will change whatever you currently have (gtk/qt theming, shell, sddm, grub, etc) and is at your own risk.
