@@ -1,7 +1,7 @@
 [//]: ###### (Documentation for me, when I need to install my system again. Pavel Hrdina)
 
 <div align="center">
-    <h1>Pavels Gruvbox Hyprland</h1>
+    <h1>Hyprland dotfiles</h1>
     <h3></h3>
 </div>
 
