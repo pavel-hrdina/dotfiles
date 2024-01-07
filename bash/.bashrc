@@ -61,6 +61,9 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
+# Colored bash
+tty -s && export PS1="\[$(tput setaf 2)\]\u@\h:\[$(tput setaf 6)\]\w\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+
 #######################################################
 # FUNCTIONS
 #######################################################
