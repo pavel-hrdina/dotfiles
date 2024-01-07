@@ -14,7 +14,7 @@ window#waybar{
     color: #e2cca9;
     background-color: #32302f;
     padding: 5px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #workspaces button:hover,
