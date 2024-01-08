@@ -1,3 +1,4 @@
+#!/bin/bash
 #      ____  ___   _____ __  ______  ______
 #     / __ )/   | / ___// / / / __ \/ ____/
 #    / __  / /| | \__ \/ /_/ / /_/ / /     
@@ -6,7 +7,6 @@
 #                                          
 #  Pavel Hrdina 2024
 
-#!/bin/bash
 iatest=$(expr index "$-" i)
 
 test -s ~/.alias && . ~/.alias || true
@@ -29,7 +29,7 @@ elif [ -f /etc/bash_completion ]; then
 fi
 
 # Disable the bell
-if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
+if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
