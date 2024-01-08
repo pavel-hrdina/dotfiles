@@ -1,7 +1,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: JetBrainsMono Nerd Font;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
     font-weight: bold;
     min-height: 0;
 }
@@ -14,7 +15,6 @@ window#waybar{
     color: #e2cca9;
     background-color: #32302f;
     padding: 5px;
-    font-size: 15px;
 }
 
 #workspaces button:hover,
@@ -53,9 +53,7 @@ window#waybar{
 #network,
 #tray {
     color: #FBF1C7;
-    font-size: 15px;
     padding: 0 10 0 10;
-
 }
 
 
@@ -81,12 +79,10 @@ window#waybar{
 
 #mode {
     color: #32302f;
-    font-size: 15px;
 }
 
 #clock {
     color: #e2cca9;
-    font-size: 15px;
 }
 
 #battery.charging {
@@ -103,6 +99,5 @@ window#waybar{
 
 #tooltip {
     color: #e2cca9;
-    font-size: 13px;
     background-color: #32302f;
 }
