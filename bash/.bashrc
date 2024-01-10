@@ -70,12 +70,12 @@ tty -s && export PS1="\[$(tput setaf 2)\]\u@\h:\[$(tput setaf 6)\]\w\[$(tput set
 
 gcom() {
 	git add .
-	git commit -S -m "$1: openSUSE" 
+	git commit -S -m "$1" 
 }
 
 lazyg() {
 	git add .
-	git commit -S -m "$1: openSUSE"
+	git commit -S -m "$1"
 	git push
 }
 
