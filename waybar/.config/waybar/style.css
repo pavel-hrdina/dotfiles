@@ -18,13 +18,13 @@ window#waybar{
 }
 
 #workspaces button:hover,
-#workspaces button.focused:hover,
+#workspaces button.active:hover,
 #workspaces button.visible:hover {
     color: #32302f;
     background-color: #e9b143;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     background-color: #3c3836;
     box-shadow: inset 0 -3px #f28534;
 }
