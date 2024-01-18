@@ -556,13 +556,12 @@ local servers = {
   yamlls = {
     settings = {
     yaml = {
-       -- other settings. note this overrides the lspconfig defaults.
-       schemas = {
-       },
+          -- other settings. note this overrides the lspconfig defaults.
+          ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] = "/*.k8s.yaml",
+        },
       },
     },
   }
-}
 
 -- Setup bash lsp
 vim.api.nvim_create_autocmd('FileType', {
