@@ -1,15 +1,15 @@
 --      ____                   ___          _   ____________ _    ________  ___
 --     / __ \____ __   _____  / ( )_____   / | / / ____/ __ \ |  / /  _/  |/  /
---    / /_/ / __ `/ | / / _ \/ /|// ___/  /  |/ / __/ / / / / | / // // /|_/ / 
---   / ____/ /_/ /| |/ /  __/ /  (__  )  / /|  / /___/ /_/ /| |/ // // /  / /  
---  /_/    \__,_/ |___/\___/_/  /____/  /_/ |_/_____/\____/ |___/___/_/  /_/   
+--    / /_/ / __ `/ | / / _ \/ /|// ___/  /  |/ / __/ / / / / | / // // /|_/ /
+--   / ____/ /_/ /| |/ /  __/ /  (__  )  / /|  / /___/ /_/ /| |/ // // /  / /
+--  /_/    \__,_/ |___/\___/_/  /____/  /_/ |_/_____/\____/ |___/___/_/  /_/
 --
 --  Pavel Hrdina 2024
---                                                                             
+--
 
 
 -- Set <space> as the leader key
- 
+
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
@@ -63,12 +63,12 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
     },
-},
+  },
 
   {
     -- Autocompletion
@@ -88,7 +88,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -232,8 +232,8 @@ require('lazy').setup({
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
-  -- require 'kickstart.plugins.autoformat',
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.autoformat',
+  require 'kickstart.plugins.debug',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
@@ -555,13 +555,18 @@ local servers = {
   },
   yamlls = {
     settings = {
-    yaml = {
-          -- other settings. note this overrides the lspconfig defaults.
-          ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] = "/*.k8s.yaml",
-        },
+      yaml = {
+        format = { enable = true },
+        validate = true,
+        hover = true,
+        keyOrdering = false,
+        -- other settings. note this overrides the lspconfig defaults.
+        ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] =
+        "/*.k8s.yaml",
       },
     },
-  }
+  },
+}
 
 -- Setup bash lsp
 vim.api.nvim_create_autocmd('FileType', {
