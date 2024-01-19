@@ -80,6 +80,11 @@ lazyg() {
 	git push
 }
 
+# copy files from $1 to $2
+rsyncc() {
+	rsync -P -v -z ‐‐compress‐choice=zstd -a "$1" "$2"
+}
+
 #######################################################
 # MACHINE SPECIFIC ALIAS'S
 #######################################################
