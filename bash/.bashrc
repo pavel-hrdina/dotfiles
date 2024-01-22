@@ -96,4 +96,4 @@ rsyncc() {
 alias vim=nvim
 
 # POKEMON!
-pokemon-colorscripts --no-title -n kangaskhan
+#pokemon-colorscripts --no-title -n kangaskhan

@@ -568,19 +568,18 @@ local servers = {
   },
 }
 
--- Setup bash lsp
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = 'sh',
-  callback = function()
-    vim.lsp.start({
-      name = 'bash-language-server',
-      cmd = { 'bash-language-server', 'start' },
-    })
-  end,
-})
-
 -- Setup neovim lua configuration
 require('neodev').setup()
+require 'lspconfig'.bashls.setup {
+  cmd = { "bash-language-server", "start" },
+  filetypes = { "sh" },
+  settings = {
+    bashIde = {
+      globPattern = "*@(.sh|.inc|.bash|.command)"
+    },
+    root_dir = "/home/pavel/",
+  }
+}
 
 -- nvim-cmp supports additional completion capabilities, so broadcast that to servers
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -591,6 +590,7 @@ local mason_lspconfig = require 'mason-lspconfig'
 
 mason_lspconfig.setup {
   ensure_installed = vim.tbl_keys(servers),
+  'bash-language-server',
 }
 
 mason_lspconfig.setup_handlers {
