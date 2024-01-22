@@ -9,7 +9,7 @@
 
 ## Installation
 
-The script is made for openSUSE Tumbleweed. I didn't include Nvidia support.
+The script is made for openSUSE Tumbleweed. I didn't include Nvidia support. (I still need to create a script, but I don't have time for that right now, it'll be done when it's done.)
 
 > [!CAUTION]
 > Examine the script thoroughly before executing it on your system, as it may cause harm to your system.
