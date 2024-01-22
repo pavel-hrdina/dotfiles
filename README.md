@@ -25,7 +25,8 @@ installed desktop should work but will change whatever you currently have (gtk/q
 Clone and execute -
 
 ```shell
-sudo zypper up
+screen
+sudo -vvv zypper up
 git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles
 # TODO: Create an installation script
 ```
