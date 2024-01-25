@@ -2,10 +2,10 @@
 
 #############################################################
 #    script          multiVMClone pavel.hrdina.ml@seznan.cz #
-#    author          Pavel Hrdina 
+#    author          Pavel Hrdina
 #############################################################
 
-# This script creates a number of template clones using qm in 
+# This script creates a number of template clones using qm in
 # proxmox. The script should work on any template you have set
 # up. Happy cloning!
 
@@ -39,7 +39,7 @@ vm6ID=106
 
 allVMsID=("$vm1ID" "$vm2ID" "$vm3ID" "$vm4ID" "$vm5ID" "$vm6ID")
 
-# Machine MAC adresses that are reserved in dhcp, comment this line, 
+# Machine MAC adresses that are reserved in dhcp, comment this line,
 # , and lines x, if you don't want the MACs to be changed
 
 vm1MAC="BC:24:11:17:D5:A1"
@@ -62,15 +62,11 @@ echo -e "\n"
 
 # Clone the machines and set macs
 for i in ${!allVMs[*]}; do
-  echo -e "\033[1m\nCloning virtual machine $i\033[0m\n"
-  qm clone "$templateID" "${allVMsID[$i]}" --full --name "${allVMs[$i]}"
+    echo -e "\033[1m\nCloning virtual machine $i\033[0m\n"
+    qm clone "$templateID" "${allVMsID[$i]}" --full --name "${allVMs[$i]}"
 
-  echo -e "\033[1m\nSetting virtual machine '${allVMs[$i]}' MAC adress \033[0m\n"
-  qm set "${allVMsID[$i]}" -net0 bridge=vmbr0,virtio="${allVMsMACS[$i]}"
+    echo -e "\033[1m\nSetting virtual machine '${allVMs[$i]}' MAC adress \033[0m\n"
+    qm set "${allVMsID[$i]}" -net0 bridge=vmbr0,virtio="${allVMsMACS[$i]}"
 done
- 
+
 echo -e "${C_GREEN4}\033[1m\nDONE!\033[0n"
-
-
-
-

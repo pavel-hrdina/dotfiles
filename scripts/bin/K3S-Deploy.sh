@@ -12,10 +12,8 @@ k3sVersion="v1.26.10+k3s2"
 
 # Set the IP addresses of the master and work nodes
 master1=192.168.0.10
-master2=192.168.0.11
-master3=192.168.0.12
-worker1=192.168.0.13
-worker2=192.168.0.13
+worker1=192.168.0.11
+worker2=192.168.0.12
 
 # User of remote machines
 user=ubuntu
@@ -24,7 +22,7 @@ user=ubuntu
 interface=eth0
 
 # Set the virtual IP address (VIP)
-vip=192.168.0.50
+vip=192.168.0.60
 
 # Array of master nodes
 masters=($master2 $master3)
@@ -33,13 +31,13 @@ masters=($master2 $master3)
 workers=($worker1 $worker2)
 
 # Array of all
-all=($master1 $master2 $master3 $worker1 $worker2)
+all=($master1 $worker1 $worker2)
 
 # Array of all minus master
-allnomaster1=($master2 $master3 $worker1 $worker2)
+allnomaster1=($worker1 $worker2)
 
 #Loadbalancer IP range
-lbrange=192.168.0.60-192.168.0.80
+lbrange=192.168.0.70-192.168.0.90
 
 #ssh certificate name variable
 certName=id_rsa
