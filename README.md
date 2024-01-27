@@ -51,7 +51,7 @@ $  # Make sure that the system is up to date:
 $  screen # or tmux whatever.. 
 $  sudo -vvv zypper up
 $     
-$ # Install the packages
+$  # Install the packages
 $  sudo zypper in gammastep hyprland stow waybar kitty neovim tmux
 $
 $  # Clone this repo, and install
