@@ -31,7 +31,7 @@ fi
 
 echo -e "${F_DIM}Check operating system...${NO_FORMAT}\n"
 
-# try using zypper to determine OS
+# Try using zypper to determine OS
 if zypper -n --version; then
     echo -e "\n${F_DIM}Running openSUSE, continue...${NO_FORMAT}\n";
 else
