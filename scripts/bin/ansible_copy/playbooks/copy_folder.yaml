@@ -1,0 +1,10 @@
+---
+- name: run tasks on all host's
+  hosts: '*'
+  tasks:
+    - name: copy files to remote
+      copy:
+        src: '{{ item }}'
+        dest: $HOME/{{ item }}
+        mode: +x
+      loop: [longhorn-K3S.sh, longhorn.yaml]
