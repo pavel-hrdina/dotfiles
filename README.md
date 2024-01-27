@@ -5,7 +5,9 @@
     <h3></h3>
 </div>
 
-![desktop](https://images2.imgbox.com/f0/6c/Wbog0c5Z_o.png)
+<div align="center">
+    <img src="https://images2.imgbox.com/f0/6c/Wbog0c5Z_o.png" alt="desktop" width="1000"/>
+</div>
 
 ## Installation
 
