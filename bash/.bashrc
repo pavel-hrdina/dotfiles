@@ -2,10 +2,10 @@
 #
 #      ____  ___   _____ __  ______  ______
 #     / __ )/   | / ___// / / / __ \/ ____/
-#    / __  / /| | \__ \/ /_/ / /_/ / /     
-#   / /_/ / ___ |___/ / __  / _, _/ /___   
-#  /_____/_/  |_/____/_/ /_/_/ |_|\____/   
-#                                          
+#    / __  / /| | \__ \/ /_/ / /_/ / /
+#   / /_/ / ___ |___/ / __  / _, _/ /___
+#  /_____/_/  |_/____/_/ /_/_/ |_|\____/
+#
 #  Pavel Hrdina 2024
 
 iatest=$(expr index "$-" i)
@@ -19,14 +19,14 @@ fi
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	 . /etc/bashrc
+    . /etc/bashrc
 fi
 
 # Enable bash programmable completion features in interactive shells
 if [ -f /usr/share/bash-completion/bash_completion ]; then
-	. /usr/share/bash-completion/bash_completion
+    . /usr/share/bash-completion/bash_completion
 elif [ -f /etc/bash_completion ]; then
-	. /etc/bash_completion
+    . /etc/bash_completion
 fi
 
 # Disable the bell
@@ -70,19 +70,25 @@ tty -s && export PS1="\[$(tput setaf 2)\]\u@\h:\[$(tput setaf 6)\]\w\[$(tput set
 #######################################################
 
 gcom() {
-	git add .
-	git commit -S -m "$1" 
+    git add .
+    git commit -S -m "$1"
 }
 
 lazyg() {
-	git add .
-	git commit -S -m "$1"
-	git push
+    git add .
+    git commit -S -m "$1"
+    git push
+}
+
+glog() {
+    git log --graph \
+        --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
+        --abbrev-commit
 }
 
 # copy files from $1 to $2
 rsyncc() {
-	rsync -P -v -z ‐‐compress‐choice=zstd -a "$1" "$2"
+    rsync -P -v -z ‐‐compress‐choice=zstd -a "$1" "$2"
 }
 
 #######################################################
