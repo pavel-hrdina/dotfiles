@@ -25,7 +25,10 @@
 	     "2": "",
 	     "3": "󰻝",
 	     "4": "",
-    },
+             "default": "",        
+	     "empty": ""
+    },	
+        "sort-by-number": true,
   },
     "network": {
         "interval": 5,

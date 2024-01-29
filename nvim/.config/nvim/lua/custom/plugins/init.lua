@@ -16,6 +16,7 @@ return {
 				null_ls.builtins.diagnostics.yamllint,
 				null_ls.builtins.completion.spell,
 				null_ls.builtins.diagnostics.ansiblelint,
+				null_ls.builtins.formatting.markdownlint,
 			},
 		})
 	end,
