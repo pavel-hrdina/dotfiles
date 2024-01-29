@@ -43,7 +43,7 @@ $  # TODO: Create an installation script
 ```
 
 After the installation is done, restart you machine, in case you would 
-like to do this manually install the packages, and execute stow on all 
+like to do this manually, install the packages, and execute stow on all 
 the files in the dotfiles directory:
 
 ```bash
