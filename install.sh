@@ -3,10 +3,10 @@
 # Perform dotfiles installation
 
 # Script wide variables
-NO_FORMAT="\033[0m"
-F_BOLD="\033[1m"
-C_OLIVE="\033[38;5;3m"
-F_DIM="\033[2m"
+readonly NO_FORMAT="\033[0m"
+readonly F_BOLD="\033[1m"
+readonly C_OLIVE="\033[38;5;3m"
+readonly F_DIM="\033[2m"
 
 echo -e "
 ----------------------------------------------------------
