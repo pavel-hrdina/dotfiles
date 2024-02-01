@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# Perform dotfiles installation
 
 # Script wide variables
 NO_FORMAT="\033[0m"
