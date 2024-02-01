@@ -17,15 +17,8 @@ license         GPL-3.0
 ----------------------------------------------------------
 "
 
-#############################################
-# YOU SHOULD ONLY NEED TO EDIT THIS SECTION #
-#############################################
-
-######################################
-#Lines bellow should not be modified #
-######################################
-
 set -o pipefail
+
 if [ "$EUID" -ne 0 ];then
     echo -e "${F_DIM}Please run as root${NO_FORMAT}\n"
     exit
