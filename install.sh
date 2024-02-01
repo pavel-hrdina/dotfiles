@@ -19,8 +19,22 @@ license         GPL-3.0
 
 set -o pipefail
 
+#######################################
+# A simple error function that prints
+# time on failure.
+# Globals:
+#   None
+# Arguments:
+#   None
+# Outputs:
+#   Writes error to STDERR
+#######################################
+err() {
+    echo -e "${F_DIM}[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*${NO_FORMAT}\n" >&2
+}
+
 if [ "$EUID" -ne 0 ];then
-    echo -e "${F_DIM}Please run as root${NO_FORMAT}\n"
+    err "Please run as root"
     exit
 fi
 
