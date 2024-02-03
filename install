@@ -25,7 +25,7 @@ readonly C_OLIVE="\033[38;5;3m"
 readonly F_DIM="\033[2m"
 
 # You can add packages here
-readonly package_list=("hyprland" "firefox")
+readonly package_list=("hyprland" "firefox" "git")
 
 echo -e "
 ----------------------------------------------------------
