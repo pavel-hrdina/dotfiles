@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-    <img src="https://images2.imgbox.com/f0/6c/Wbog0c5Z_o.png" alt="desktop" width="1000"/>
+    <img src="https://images2.imgbox.com/41/45/WJbj9Smv_o.png" alt="desktop" width="1000"/>
 </div>
 
 ## Installation
