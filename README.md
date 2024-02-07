@@ -1,5 +1,8 @@
 [//]: ###### (Documentation for me, when I need to install my system again. Pavel Hrdina)
 
+> [!WARNING]
+> Do not copy commands below; this project is not to be used yet. When it's done, I will remove this warning.
+
 <div align="center">
     <h1>Hyprland dotfiles</h1>
     <h3></h3>
