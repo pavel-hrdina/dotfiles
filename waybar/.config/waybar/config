@@ -10,6 +10,7 @@
  */
 {
     "position": "top",
+    "layer": "top",
     "modules-left": ["hyprland/workspaces"],
    "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", 
