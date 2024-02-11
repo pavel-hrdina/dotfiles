@@ -33,7 +33,7 @@ GNOME or KDE, both should work with the script. using it on previously
 installed desktop should work but will change whatever you currently
 have (gtk/qt theming, shell, sddm, grub, etc) and is at your own risk.
 
-Clone and execute -
+Clone to your home directory and execute -
 
 ```bash
 $  # Make sure that the system is up to date:
@@ -41,8 +41,11 @@ $  screen # or tmux whatever..
 $  sudo -vvv zypper up
 $
 $  # Clone this repo, and install
-$  git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles
-$  # TODO: Create an installation script
+$  git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles && cd ~/.dotfiles
+$  sudo ./install
+$
+$  # Or you can live on the edge
+$  # git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles && sudo ~/.dotfiles/install
 ```
 
 After the installation is done, restart you machine, in case you would
