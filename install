@@ -94,3 +94,4 @@ else
 fi
 
 # Make sure that there will be no conflicts between stow and the file system.
+echo -e "${F_DIM}Make sure that there are no file conflicts when creating links...${NO_FORMAT}\n" >&2
