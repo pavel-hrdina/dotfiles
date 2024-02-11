@@ -29,9 +29,6 @@ window#waybar{
     background-color: #e9b143;
 }
 
-#workspaces button.active {
-    background-color: #3c3836;
-}
 
 #workspaces button.urgent {
     color: #32302f;
