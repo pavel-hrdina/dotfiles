@@ -9,9 +9,6 @@ My dots for openSUSE Tumbleweed using Gruvbox with hyprland
     - [ ] Create a file that will contain all the packages that are to be installed
   - [ ] Make a separate folder for the installation script
 - [ ] Add Gruvbox theme to defiles.
-- [ ] Finish documentation
-  - [ ] Add all the packages to documentation
-  - [ ] Add a license and contributions section to 'README.md'
 - [ ] Add missing config files to the 'dotfiles' repository
 - [ ] Move the TODO list to github issues and kanban board, so that people can contribute
   - [ ] Create a pull request workflow
@@ -22,6 +19,9 @@ My dots for openSUSE Tumbleweed using Gruvbox with hyprland
 ### In Progress
 
 - [ ] Split hyprland config file into multiple config files.
+- [ ] Finish documentation
+  - [ ] Add all the packages to documentation
+  - [ ] Add a license and contributions section to 'README.md'
 
 ### Done ✓
 
