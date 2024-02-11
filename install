@@ -32,6 +32,7 @@ echo -e "
    ${F_BOLD}${C_OLIVE}
 author          Pavel Hrdina     pavel.hrdina.ml@seznam.cz
 license         GPL-3.0
+github:         https://github.com/Pavel-Hrdina/dotfiles
    ${NO_FORMAT}
 ----------------------------------------------------------
 "
@@ -91,3 +92,5 @@ else
     echo -e "\n${F_DIM}Zypper failed, exit${NO_FORMAT}\n" >&2
     exit 1
 fi
+
+# Make sure that there will be no conflicts between stow and the file system.
