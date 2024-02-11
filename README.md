@@ -15,22 +15,22 @@
 ## Installation
 
 The script is made for openSUSE Tumbleweed. I didn't include Nvidia support.
-(I still need to create a script, but I don't have time for that right now, 
+(I still need to create a script, but I don't have time for that right now,
 it'll be done when it's done.)
 
 > [!CAUTION]
 > Examine the script thoroughly before executing it on your system,
 > as it may cause harm to your system. I have not tested this
 > configuration on Linux distributions other than openSUSE Trumbleweed,
-> so use it with caution, but it should work. 
+> so use it with caution, but it should work.
 
 > [!NOTE]
 > I am using GNU Stow, because it requires the least hustle to use,
 > if you never used it before I recommend reading about it [here](https://www.gnu.org/software/stow/).
 
-Install openSUSE Tumbleweed as a server or a desktop environment with 
-GNOME or KDE, both should work with the script. using it on previously 
-installed desktop should work but will change whatever you currently 
+Install openSUSE Tumbleweed as a server or a desktop environment with
+GNOME or KDE, both should work with the script. using it on previously
+installed desktop should work but will change whatever you currently
 have (gtk/qt theming, shell, sddm, grub, etc) and is at your own risk.
 
 Clone and execute -
@@ -45,8 +45,8 @@ $  git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles
 $  # TODO: Create an installation script
 ```
 
-After the installation is done, restart you machine, in case you would 
-like to do this manually, install the packages, and execute stow on all 
+After the installation is done, restart you machine, in case you would
+like to do this manually, install the packages, and execute stow on all
 the files in the dotfiles directory:
 
 ```bash
@@ -65,4 +65,11 @@ $  cd ~/.dotfiles; stow ./*
 > [!TIP]
 > Don't hesitate to modify the script
 
+## Contributing
 
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+## License
+
+This repository is licensed under the [GPL-3.0 license](https://github.com/Pavel-Hrdina/dotfiles/blob/master/LICENSE)
