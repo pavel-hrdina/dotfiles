@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-    <img src="https://images2.imgbox.com/41/45/WJbj9Smv_o.png" alt="desktop" width="1000"/>
+    <img src="https://i.postimg.cc/DzpKBFN8/20240211-11h18m33s-grim.png" alt="desktop" width="1000"/>
 </div>
 
 ## Installation
