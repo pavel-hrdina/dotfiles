@@ -25,6 +25,7 @@ My dots for openSUSE Tumbleweed using Gruvbox with hyprland
 
 - [ ] Split hyprland config file into multiple config files.
 - [ ] Finish documentation
+  - [ ] Add package list
   - [ ] Add all the packages to documentation
   - [x] Add a license and contributions section to 'README.md'
   - [ ] Create a gif demonstration the installation script
