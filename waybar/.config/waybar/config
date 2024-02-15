@@ -14,13 +14,20 @@
     "modules-left": ["hyprland/workspaces"],
    "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", 
-    "temperature", "battery", "hyprland/language", "tray"],
+    "temperature", "battery", "tray"],
 
   "hyprland/workspaces": {
         "disable-scroll": false,
 	"format": "  {icon}  ",
 	"disable-markup" : false,
         "all-outputs": true,
+	"persistent-workspaces":{
+		"1": [],
+		"2": [],
+		"3": [],
+		"4": [],
+		"5": [],
+	},
 	"format-icons": {
 	     "1": "",
 	     "2": "",
@@ -119,11 +126,6 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-icons": ["", "", "", "", ""]
-    },
-
-    "hyprland/language": {
-        "format": "{shortDescription}",
-        "tooltip": false 
     },
 
     "tray": {
