@@ -4,14 +4,14 @@ My dots for openSUSE Tumbleweed using Gruvbox with hyprland
 
 ### Todo
 
-- [ ] Finish install script
+- [ ] **Finish install script**
   - [ ] Add rest of the packages to the install script
     - [ ] Create a file that will contain all the packages that are to be installed
   - [ ] Add a stow section, that will stow the config files
   - [ ] Make a separate folder for the installation script
-- [ ] Add Gruvbox theme to defiles.
-- [ ] Add missing config files to the 'dotfiles' repository
-- [ ] Move the TODO list to github issues and kanban board, so that people can contribute
+- [ ] **Add Gruvbox theme to defiles.**
+- [ ] **Add missing config files to the 'dotfiles' repository**
+- [ ] **Move the TODO list to github issues and kanban board, so that people can contribute**
   - [ ] Create a pull request workflow
   - [ ] Create github actions
     - [ ] Create a docker file for testing and development,
@@ -19,12 +19,13 @@ My dots for openSUSE Tumbleweed using Gruvbox with hyprland
           every time you make changes, or switch system, this will also
           make development easier  
     - [ ] Spellchecking
-- [ ] Create a development branch
+- [ ] **Create a development branch**
+- [ ] **Build waybar from source, to fix missing workspaces because of issue 2775**
 
 ### In Progress
 
-- [ ] Split hyprland config file into multiple config files.
-- [ ] Finish documentation
+- [ ] **Split hyprland config file into multiple config files.**
+- [ ] **Finish documentation**
   - [ ] Add package list
   - [ ] Add all the packages to documentation
   - [x] Add a license and contributions section to 'README.md'
