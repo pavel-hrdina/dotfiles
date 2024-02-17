@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-    <img src="https://i.postimg.cc/DzpKBFN8/20240211-11h18m33s-grim.png" alt="desktop" width="1000"/>
+    <img src="https://files.catbox.moe/47mn2p.png" alt="desktop" width="1000"/>
 </div>
 
 ## Packages 
