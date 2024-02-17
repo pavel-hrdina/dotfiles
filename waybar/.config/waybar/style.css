@@ -1,34 +1,61 @@
 * {
-    border: none;
-    border-radius: 0px;
-    font-family: "JetBrainsMono Nerd Font", FontAwesome, Roboto, Helvetice, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    min-height: 0;
+    min-height: 0px;
+    margin: 0px;
+    border-radius: 7px;
+    font-family: "JetBrains Mono Nerd Font", FontAwesome, Roboto, Helvetice, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding-bottom: 0px;
+}
+
+#window {
+    margin: 5px 5px 2px 5px;
+    padding-left: 10px;
+    padding-right: 7px;
+    
 }
 
 window#waybar{
-    background-color: rgba(50, 48, 47, 0.8);
+    background-color: transparent;
     transition-duration: .5s;
+    border-radius: 7px;
+    border-bottom: 2px solid rgb(50,48,47);
+    border-right: 2px solid rgb(50,48,47);
+    background-color: rgb(40,40,40);
+}
+
+
+@keyframes button_activate {
+    from { opacity: .3}
+    to { opacity: 1.;}
+}
+
+#workspaces {
+    margin: 5px 5px 2px 5px;
+    border-radius: 7px;
 }
 
 #workspaces button {
     color: #e2cca9;
+    border-radius: 7px;
     background-color: #32302f;
-    padding: 0px 5px;
-    border: 0;
-    margin: 0;
-    border-radius: 0px;
+    padding: 5px 5px 5px;
+    margin: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 10px;
     font-weight: bold;
+    margin: 5px 5px 2px 5px;
 }
 
-#workspaces button:hover,
-#workspaces button.active:hover,
-#workspaces button.visible:hover {
+#workspaces button.active {
     color: #32302f;
     background-color: #e9b143;
 }
 
+#workspaces button.hover {
+    border: solid transparent;
+}
 
 #workspaces button.urgent {
     color: #32302f;

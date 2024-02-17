@@ -9,24 +9,23 @@
  *    Pavel Hrdina 2024
  */
 {
-    "position": "top",
-    "layer": "top",
-    "modules-left": ["hyprland/workspaces"],
+   "position": "top",
+   "layer": "top",
+   "modules-left": ["hyprland/workspaces"],
    "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", 
-    "temperature", "battery", "tray"],
+   "modules-right": ["pulseaudio", "network", "cpu", "memory", 
+   "temperature", "battery", "tray"],
 
   "hyprland/workspaces": {
-        "disable-scroll": false,
 	"format": "  {icon}  ",
-	"disable-markup" : false,
-        "all-outputs": true,
+	"on-click": "active",
+	"all-outputs": false,
 	"persistent-workspaces":{
 		"1": [],
 		"2": [],
 		"3": [],
 		"4": [],
-		"5": [],
+		"5": []
 	},
 	"format-icons": {
 	     "1": "",
@@ -38,7 +37,6 @@
              "default": "",        
 	     "empty": ""
     },	
-        "sort-by-number": true,
   },
     "network": {
         "interval": 5,
@@ -69,7 +67,7 @@
             "on-click-middle": "mode",
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
-        },
+        }
     },
 
     "pulseaudio": {
@@ -131,6 +129,6 @@
     "tray": {
         "icon-size": 24,
         "spacing": 1
-    },
+    }
  
 }
