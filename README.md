@@ -12,6 +12,10 @@
     <img src="https://i.postimg.cc/DzpKBFN8/20240211-11h18m33s-grim.png" alt="desktop" width="1000"/>
 </div>
 
+## Packages 
+
+> TODO: Add a list of packages that will be installed
+
 ## Installation
 
 The script is made for openSUSE Tumbleweed. I didn't include Nvidia support.
@@ -41,11 +45,11 @@ $  screen # or tmux whatever..
 $  sudo -vvv zypper up
 $
 $  # Clone this repo, and install
-$  git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles && cd ~/.dotfiles
+$  git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles && cd $HOME/.dotfiles
 $  sudo ./install
 $
 $  # Or you can live on the edge
-$  # git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles && sudo ~/.dotfiles/install
+$  # git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles && sudo $HOME/.dotfiles/install
 ```
 
 After the installation is done, restart you machine, in case you would
@@ -61,8 +65,8 @@ $  # Install the packages
 $  sudo zypper in gammastep hyprland stow waybar kitty neovim tmux
 $
 $  # Clone this repo, and install
-$  git clone https://github.com/Pavel-Hrdina/dotfile.git ~/.dotfiles
-$  cd ~/.dotfiles; stow ./*
+$  git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles
+$  cd $HOME/.dotfiles; stow ./*
 ```
 
 > [!TIP]
