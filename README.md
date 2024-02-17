@@ -46,10 +46,10 @@ $  sudo -vvv zypper up
 $
 $  # Clone this repo, and install
 $  git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles && cd $HOME/.dotfiles
-$  sudo ./install
+$  sudo $HOME/.dotfiles/scripts/install
 $
 $  # Or you can live on the edge
-$  # git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles && sudo $HOME/.dotfiles/install
+$  # git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles && sudo $HOME/.dotfiles/scripts/install
 ```
 
 After the installation is done, restart you machine, in case you would
