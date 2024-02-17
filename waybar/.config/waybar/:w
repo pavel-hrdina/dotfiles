@@ -16,9 +16,9 @@
    "temperature", "battery", "tray"],
   
   "hyprland/window": {
-	"format": "{title}",
-		"max-length": 333,
-	"seperate-outputs": true
+	"format": "{title}"
+	"max-length": 333,
+	"separate-outputs": true
   },
 
   "hyprland/workspaces": {
