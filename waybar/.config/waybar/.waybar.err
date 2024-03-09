@@ -1,7 +1,13 @@
 
-(waybar:6227): Gtk-WARNING **: 17:34:51.612: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-03-09 17:34:51.654] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-03-09 17:34:51.659] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-03-09 17:34:51.673] [info] Hyprland IPC starting
-[2024-03-09 17:34:51.675] [warning] Mapping is not an object
-[2024-03-09 17:34:51.983] [info] Bar configured (width: 1920, height: 36) for output: eDP-1
+(waybar:2315): Gtk-WARNING **: 15:35:05.457: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-03-11 15:35:05.497] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-03-11 15:35:05.853] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-03-11 15:35:05.877] [info] Hyprland IPC starting
+[2024-03-11 15:35:05.965] [warning] Mapping is not an object
+[2024-03-11 15:35:06.285] [info] Bar configured (width: 1920, height: 36) for output: eDP-1
+
+** (waybar:2315): WARNING **: 15:38:36.311: Status Notifier Item with bus name ':1.22' and object path '/org/ayatana/NotificationItem/udiskie' is already registered
+[2024-03-11 15:38:36.313] [error] Host: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: Status Notifier Host with bus name ':1.7' and object path '/StatusNotifierHost/0' is already registered
+
+** (waybar:2315): WARNING **: 15:39:30.180: Status Notifier Item with bus name ':1.22' and object path '/org/ayatana/NotificationItem/udiskie' is already registered
+[2024-03-11 15:39:30.181] [error] Host: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: Status Notifier Host with bus name ':1.7' and object path '/StatusNotifierHost/0' is already registered
