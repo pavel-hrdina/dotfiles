@@ -1,15 +1,7 @@
 
-(waybar:5531): Gtk-WARNING **: 17:32:23.981: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-03-09 17:32:24.022] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-03-09 17:32:24.027] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-03-09 17:32:24.044] [info] Hyprland IPC starting
-[2024-03-09 17:32:24.045] [warning] Mapping is not an object
-[2024-03-09 17:32:24.360] [info] Bar configured (width: 1280, height: 30) for output: eDP-1
-[2024-03-09 17:32:24.366] [info] Bar configured (width: 1280, height: 30) for output: eDP-1
-[2024-03-09 17:32:24.366] [error] Item '': No icon name or pixmap given.
-[2024-03-09 17:32:24.381] [error] Item '': No icon name or pixmap given.
-[2024-03-09 17:32:24.381] [error] Item '': No icon name or pixmap given.
-[2024-03-09 17:32:24.381] [error] Item '': No icon name or pixmap given.
-[2024-03-09 17:32:24.381] [error] Item '': No icon name or pixmap given.
-
-** (waybar:5531): WARNING **: 17:32:24.382: Status Notifier Item with bus name ':1.61' and object path '/org/ayatana/NotificationItem/virt_manager' is already registered
+(waybar:6227): Gtk-WARNING **: 17:34:51.612: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-03-09 17:34:51.654] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-03-09 17:34:51.659] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-03-09 17:34:51.673] [info] Hyprland IPC starting
+[2024-03-09 17:34:51.675] [warning] Mapping is not an object
+[2024-03-09 17:34:51.983] [info] Bar configured (width: 1920, height: 36) for output: eDP-1
