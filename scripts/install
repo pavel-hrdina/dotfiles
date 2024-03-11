@@ -27,6 +27,9 @@ readonly F_DIM="\033[2m"
 # You can add packages here
 readonly package_list=("hyprland" "firefox" "neovim" "neofetch" "tmux" "waybar" "wofi" "git" "udiskie" "xdg-desktop-portal-hyprland" "xwayland" "discord" "vulkan" "gamescope" "gamemode" "wine-staging" "mangohud" "fluidsynth" "steam")
 
+# Get user home; even when running as root safely (no eval)
+readonly USER_HOME=$(getent passwd ${SUDO_USER:-$USER} | cut -d: -f6)
+
 echo -e "
 ----------------------------------------------------------
    ${F_BOLD}${C_OLIVE}
@@ -93,5 +96,7 @@ else
     exit 1
 fi
 
-# Make sure that there will be no conflicts between stow and the file system.
 echo -e "${F_DIM}Make sure that there are no file conflicts when creating links...${NO_FORMAT}\n" >&2
+
+echo -e "${F_DIM}Remove unwanted files${NO_FORMAT}\n" >&2
+rm -r "$USER_HOME/.dotfiles/*md" "$USER_HOME/.dotfiles/LICENSE"
