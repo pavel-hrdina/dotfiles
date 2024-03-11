@@ -98,7 +98,4 @@ fi
 
 echo -e "${F_BOLD}Make sure that there are no file conflicts when creating links...${NO_FORMAT}\n" >&2
 
-echo -e "${F_DIM}Removing unwanted files...${NO_FORMAT}\n" >&2
 rm -r $USER_HOME/.dotfiles/*md $USER_HOME/.dotfiles/LICENSE
-
-echo -e "${F_DIM}Done...${NO_FORMAT}\n" >&2
