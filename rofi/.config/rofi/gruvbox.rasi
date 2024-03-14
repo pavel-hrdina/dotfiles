@@ -3,7 +3,7 @@
  * Maintainer: joekamprad <joekamprad@endeavouros.com>
  *******************************************************/
 * {
-    selected-normal-foreground:  rgba ( 40, 40, 40, 100 % );
+    selected-normal-foreground:  rgba ( 255, 147, 5, 100 % );
     foreground:                  rgba ( 174, 139, 138, 100 % );
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 45, 48, 59, 1 % );
@@ -20,7 +20,7 @@
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 45, 48, 59, 1 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 254, 128, 25, 100 % );
+    selected-normal-background:  rgba ( 24, 26, 32, 100 % );
     border-color:                rgba ( 124, 131, 137, 100 % );
     spacing:                     2;
     separatorcolor:              rgba ( 45, 48, 59, 1 % );
@@ -32,5 +32,7 @@
     active-background:           rgba ( 29, 31, 33, 17 % );
     selected-active-background:  rgba ( 26, 28, 35, 100 % );
 }
+
+
 
 
