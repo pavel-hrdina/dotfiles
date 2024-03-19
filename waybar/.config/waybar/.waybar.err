@@ -1,7 +1,40 @@
 
-(waybar:12455): Gtk-WARNING **: 12:02:03.622: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-03-16 12:02:03.664] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-03-16 12:02:03.669] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-03-16 12:02:03.684] [info] Hyprland IPC starting
-[2024-03-16 12:02:03.685] [warning] Mapping is not an object
-[2024-03-16 12:02:03.991] [info] Bar configured (width: 1920, height: 36) for output: eDP-1
+(waybar:2334): Gtk-WARNING **: 16:31:46.813: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-03-19 16:31:46.865] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-03-19 16:31:47.248] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-03-19 16:31:47.266] [info] Hyprland IPC starting
+[2024-03-19 16:31:47.393] [warning] Mapping is not an object
+[2024-03-19 16:31:47.698] [info] Bar configured (width: 1920, height: 36) for output: eDP-1
+[2024-03-19 16:32:37.869] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:37.873] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.333] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.333] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.335] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.338] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.835] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.836] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.838] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:38.840] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:39.104] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:39.107] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:39.120] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:40.420] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:40.423] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:40.892] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:40.893] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:40.895] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:40.898] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:41.762] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:41.763] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:43.018] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-19 16:32:43.022] [error] Hyprland IPC: Couldn't get host (2)
+
+(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:49.847: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.452: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.549: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.651: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.753: Unable to replace properties on 0: Error getting properties for ID
