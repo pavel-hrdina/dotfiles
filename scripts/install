@@ -24,8 +24,8 @@ readonly F_BOLD="\033[1m"
 readonly C_OLIVE="\033[38;5;3m"
 readonly F_DIM="\033[2m"
 
-# You can add packages here
-readonly package_list=("hyprland" "firefox" "neovim" "neofetch" "tmux" "waybar" "wofi" "git" "udiskie" "xdg-desktop-portal-hyprland" "xwayland" "discord" "vulkan" "gamescope" "gamemode" "wine-staging" "mangohud" "fluidsynth" "steam")
+# You can add packages here; there already are some listed, that your can use, I install all the packages that I have on my system;
+# readonly package_list=("hyprland" "firefox" "neovim" "neofetch" "tmux" "waybar" "wofi" "git" "udiskie" "xdg-desktop-portal-hyprland" "xwayland" "discord" "vulkan" "gamescope" "gamemode" "wine-staging" "mangohud" "fluidsynth" "steam")
 
 # Get user home; even when running as root safely (no eval)
 readonly USER_HOME=$(getent passwd ${SUDO_USER:-$USER} | cut -d: -f6)
@@ -86,15 +86,23 @@ else
     systemctl isolate graphical.target
 fi
 
-# Install necessary components
-# SUSE
+# Install necessary components on SUSE
 echo -e "${F_DIM}Installing packages, continue...${NO_FORMAT}\n" >&2
-if  zypper --non-interactive in "${package_list[@]}"; then
+# Nice hack
+if xargs sudo zypper install < ./resources/my_pkgs.txt; then
     echo -e "\n${F_DIM}Packages installed, continue...${NO_FORMAT}\n" >&2
 else
     echo -e "\n${F_DIM}Zypper failed, exit${NO_FORMAT}\n" >&2
     exit 1
 fi
+
+# If you want to use your own package list:
+# if  zypper  in "${package_list[@]}"; then
+#    echo -e "\n${F_DIM}Packages installed, continue...${NO_FORMAT}\n" >&2
+# else
+#    echo -e "\n${F_DIM}Zypper failed, exit${NO_FORMAT}\n" >&2
+#    exit 1
+#fi
 
 echo -e "${F_BOLD}Make sure that there are no file conflicts when creating links...${NO_FORMAT}\n" >&2
 

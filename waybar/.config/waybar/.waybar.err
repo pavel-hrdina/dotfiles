@@ -1,40 +1,18 @@
 
-(waybar:2334): Gtk-WARNING **: 16:31:46.813: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-03-19 16:31:46.865] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-03-19 16:31:47.248] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-03-19 16:31:47.266] [info] Hyprland IPC starting
-[2024-03-19 16:31:47.393] [warning] Mapping is not an object
-[2024-03-19 16:31:47.698] [info] Bar configured (width: 1920, height: 36) for output: eDP-1
-[2024-03-19 16:32:37.869] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:37.873] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.333] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.333] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.335] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.338] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.835] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.836] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.838] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:38.840] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:39.104] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:39.107] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:39.120] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:40.420] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:40.423] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:40.892] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:40.893] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:40.895] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:40.898] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:41.762] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:41.763] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:43.018] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-19 16:32:43.022] [error] Hyprland IPC: Couldn't get host (2)
+(waybar:4910): Gtk-WARNING **: 08:56:30.005: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-03-21 08:56:30.045] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-03-21 08:56:30.452] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-03-21 08:56:30.467] [info] Hyprland IPC starting
+[2024-03-21 08:56:30.526] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-21 08:56:30.527] [warning] module hyprland/window: Disabling module "hyprland/window", Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
 
-(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:49.847: Unable to replace properties on 0: Error getting properties for ID
+[2024-03-21 08:56:30.606] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-21 08:56:30.606] [warning] module hyprland/workspaces: Disabling module "hyprland/workspaces", Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
 
-(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.452: Unable to replace properties on 0: Error getting properties for ID
+[2024-03-21 08:56:30.908] [info] Bar configured (width: 1920, height: 27) for output: eDP-1
 
-(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.549: Unable to replace properties on 0: Error getting properties for ID
+(waybar:4910): LIBDBUSMENU-GLIB-WARNING **: 09:04:53.206: Unable to replace properties on 0: Error getting properties for ID
 
-(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.651: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:2334): LIBDBUSMENU-GLIB-WARNING **: 17:18:50.753: Unable to replace properties on 0: Error getting properties for ID
+(waybar:4910): LIBDBUSMENU-GLIB-WARNING **: 09:43:02.605: Unable to replace properties on 0: Error getting properties for ID
