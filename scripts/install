@@ -89,7 +89,7 @@ fi
 # Install necessary components on SUSE
 echo -e "${F_DIM}Installing packages, continue...${NO_FORMAT}\n" >&2
 # Nice hack
-xargs sudo zypper -n install < "$USER_HOME/.dotfiles/scripts/resources/my_pkgs.txt"
+#xargs sudo zypper -n install < "$USER_HOME/.dotfiles/scripts/resources/my_pkgs.txt"
 
 # If you want to use your own package list:
 # if  zypper  in "${package_list[@]}"; then
@@ -102,5 +102,5 @@ xargs sudo zypper -n install < "$USER_HOME/.dotfiles/scripts/resources/my_pkgs.t
 echo -e "\nMake sure that there are no file conflicts when creating links...${NO_FORMAT}\n" >&2
 # rm -r $USER_HOME/.dotfiles/*md $USER_HOME/.dotfiles/LICENSE # create .stow-local-ignore instead
 
-echo -e "Test for bugs before creating symlinks${NO_FORMAT}\n" >&2
-stow -nv --target=$USER_HOME/.dotfiles --restow */
+echo -e "Stow dotfiles${NO_FORMAT}\n" >&2
+make
