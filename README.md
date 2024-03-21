@@ -49,7 +49,7 @@ $  git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles && cd $
 $  sudo $HOME/.dotfiles/scripts/install
 $
 $  # Or you can live on the edge
-$  # git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles && sudo $HOME/.dotfiles/scripts/install
+$  # git clone https://github.com/Pavel-Hrdina/dotfile.git $HOME/.dotfiles cd && cd $HOME/.dotfiles && sudo $HOME/.dotfiles/scripts/install
 ```
 
 After the installation is done, restart you machine, in case you would
