@@ -89,7 +89,7 @@ fi
 # Install necessary components on SUSE
 echo -e "${F_DIM}Installing packages, continue...${NO_FORMAT}\n" >&2
 # Nice hack
-if xargs sudo zypper install < ./resources/my_pkgs.txt; then
+if xargs sudo zypper install < "$USER_HOME/.dotfiles/scripts/resources/my_pkgs.txt"; then
     echo -e "\n${F_DIM}Packages installed, continue...${NO_FORMAT}\n" >&2
 else
     echo -e "\n${F_DIM}Zypper failed, exit${NO_FORMAT}\n" >&2

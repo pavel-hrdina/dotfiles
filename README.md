@@ -12,7 +12,7 @@
     <img src="https://files.catbox.moe/wfjep2.png" alt="banner" width="1000"/>
 </div>
 
-## Packages 
+## Packages
 
 > TODO: Add a list of packages that will be installed
 
