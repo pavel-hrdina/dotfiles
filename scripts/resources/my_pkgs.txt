@@ -298,7 +298,6 @@ libhivex0
 gamescope
 kf6-kxmlgui
 libruby3_3-3_3
-gpg-pubkey
 libprotobuf-lite25_3_0
 smartmontools
 libswscale7
@@ -664,7 +663,6 @@ libebook-contacts-1_2-4
 gnome-shell-search-provider-gnome-clocks
 libcom_err2-32bit
 libminizip1-x86-64-v3
-gpg-pubkey
 libcryptsetup12
 libgthread-2_0-0
 libfontenc1
@@ -733,7 +731,6 @@ libKPim6MimeTreeParserCore6-lang
 qt6-wayland
 libidn2-0-32bit
 libqt5-qtdeclarative-tools
-gpg-pubkey
 system-user-qemu
 grub2-branding-openSUSE
 highlight-common
@@ -1041,7 +1038,6 @@ libexempi8
 kernel-firmware-sound
 qemu
 kernel-firmware-ath11k
-gpg-pubkey
 typelib-1_0-JavaScriptCore-4_0
 libbtrfsutil1
 vim-data-common
@@ -1572,7 +1568,6 @@ yast2-trans-cs
 libKF6Parts6
 libxkbregistry0-32bit
 usbutils
-gpg-pubkey
 yast2-tune
 python311-speechd
 yast2-nfs-client
