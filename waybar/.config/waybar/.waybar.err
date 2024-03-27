@@ -1,18 +1,54 @@
 
-(waybar:4910): Gtk-WARNING **: 08:56:30.005: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-03-21 08:56:30.045] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-03-21 08:56:30.452] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-03-21 08:56:30.467] [info] Hyprland IPC starting
-[2024-03-21 08:56:30.526] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-21 08:56:30.527] [warning] module hyprland/window: Disabling module "hyprland/window", Error parsing JSON: * Line 1, Column 1
+(waybar:2772): Gtk-WARNING **: 10:01:32.551: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-03-26 10:01:32.581] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-03-26 10:01:32.812] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-03-26 10:01:32.820] [info] Hyprland IPC starting
+[2024-03-26 10:01:32.834] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-26 10:01:32.834] [warning] module hyprland/window: Disabling module "hyprland/window", Error parsing JSON: * Line 1, Column 1
   Syntax error: value, object or array expected.
 
-[2024-03-21 08:56:30.606] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-21 08:56:30.606] [warning] module hyprland/workspaces: Disabling module "hyprland/workspaces", Error parsing JSON: * Line 1, Column 1
+[2024-03-26 10:01:32.847] [error] Hyprland IPC: Couldn't get host (2)
+[2024-03-26 10:01:32.847] [warning] module hyprland/workspaces: Disabling module "hyprland/workspaces", Error parsing JSON: * Line 1, Column 1
   Syntax error: value, object or array expected.
 
-[2024-03-21 08:56:30.908] [info] Bar configured (width: 1920, height: 27) for output: eDP-1
+[2024-03-26 10:01:32.979] [info] Bar configured (width: 1920, height: 27) for output: eDP-1
 
-(waybar:4910): LIBDBUSMENU-GLIB-WARNING **: 09:04:53.206: Unable to replace properties on 0: Error getting properties for ID
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 12:09:42.960: Unable to replace properties on 0: Error getting properties for ID
 
-(waybar:4910): LIBDBUSMENU-GLIB-WARNING **: 09:43:02.605: Unable to replace properties on 0: Error getting properties for ID
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 12:09:43.267: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 12:09:43.369: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 12:09:43.468: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 12:09:43.568: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:16:19.661: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:16:20.459: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:16:20.466: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:16:20.565: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:17:45.871: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:17:46.265: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:17:46.364: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:17:46.465: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:17:46.565: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:27:21.116: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:27:36.052: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:27:39.565: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:27:52.406: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:30:20.925: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2772): LIBDBUSMENU-GLIB-WARNING **: 08:45:33.196: Unable to replace properties on 0: Error getting properties for ID

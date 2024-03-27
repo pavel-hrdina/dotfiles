@@ -77,3 +77,7 @@ to discuss what you would like to change.
 ## License
 
 This repository is licensed under the [GPL-3.0 license](https://github.com/Pavel-Hrdina/dotfiles/blob/master/LICENSE)
+
+## Authors and acknowledgment
+
+Thanks to lazivim for making vim configuration a breeze 

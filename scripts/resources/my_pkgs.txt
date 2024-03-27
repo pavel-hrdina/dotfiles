@@ -3246,7 +3246,6 @@ libgphoto2-6
 libqmi-glib5
 libwebpmux3
 obex-data-server
-libgoa-backend-1_0-1
 libatk-1_0-0
 libminizip1
 gupnp-av
@@ -3399,7 +3398,6 @@ git-core
 libpng12-0-32bit
 libxcb-xvmc0
 libvirt-daemon-driver-storage-rbd
-libecal-2_0-2
 mdadm
 kernel-firmware-bluetooth
 vkbasalt
@@ -3583,3 +3581,4 @@ kernel-default
 ansible
 kernel-default-devel
 kernel-default
+lazygit
