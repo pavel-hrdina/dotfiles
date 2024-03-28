@@ -32,6 +32,7 @@ return {
         terraformls = {},
         ansiblels = {},
         marksman = {},
+        neocmake = {},
         yamlls = {
           capabilities = {
             textDocuments = {
