@@ -31,6 +31,7 @@ return {
         cssls = {},
         terraformls = {},
         ansiblels = {},
+        marksman = {},
         yamlls = {
           capabilities = {
             textDocuments = {
