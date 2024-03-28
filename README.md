@@ -23,7 +23,8 @@ it'll be done when it's done.)
 > Examine the script thoroughly before executing it on your system,
 > as it may cause harm to your system. I have not tested this
 > configuration on Linux distributions other than openSUSE Trumbleweed,
-> so use it with caution, but it should work.
+> so use it with caution, but it should work. If anything breaks during 
+> the installation, make sure that is's not your systems fault
 
 > [!NOTE]
 > I am using GNU Stow, because it requires the least hustle to use,
