@@ -30,6 +30,7 @@ return {
         bashls = {},
         cssls = {},
         terraformls = {},
+        ansiblels = {},
         yamlls = {
           capabilities = {
             textDocuments = {
