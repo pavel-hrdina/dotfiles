@@ -1,42 +1,47 @@
 
-(waybar:5977): Gtk-WARNING **: 11:36:31.658: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-03-27 11:36:31.699] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-03-27 11:36:31.704] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-03-27 11:36:31.721] [info] Hyprland IPC starting
-[2024-03-27 11:36:31.760] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-27 11:36:31.761] [warning] module hyprland/window: Disabling module "hyprland/window", Error parsing JSON: * Line 1, Column 1
-  Syntax error: value, object or array expected.
-
-[2024-03-27 11:36:31.774] [error] Hyprland IPC: Couldn't get host (2)
-[2024-03-27 11:36:31.775] [warning] module hyprland/workspaces: Disabling module "hyprland/workspaces", Error parsing JSON: * Line 1, Column 1
-  Syntax error: value, object or array expected.
-
-[2024-03-27 11:36:32.076] [info] Bar configured (width: 1920, height: 27) for output: eDP-1
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:23:18.981: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:23:19.266: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:23:19.366: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:23:19.467: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:23:19.567: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:47:05.931: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:47:06.266: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:47:06.365: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:47:06.464: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:47:06.567: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 16:47:06.669: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 10:51:40.663: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 10:51:41.494: Unable to replace properties on 0: Error getting properties for ID
-
-(waybar:5977): LIBDBUSMENU-GLIB-WARNING **: 10:51:41.566: Unable to replace properties on 0: Error getting properties for ID
+(waybar:10932): Gtk-WARNING **: 10:13:33.966: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-03-31 10:13:34.005] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-03-31 10:13:34.010] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-03-31 10:13:34.025] [info] Hyprland IPC starting
+[2024-03-31 10:13:34.027] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:13:34.508] [info] Bar configured (width: 1920, height: 36) for output: eDP-1
+sh: line 1: activate: command not found
+sh: line 1: activate: command not found
+sh: line 1: activate: command not found
+sh: line 1: activate: command not found
+sh: line 1: activate: command not found
+[2024-03-31 10:53:17.417] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:53:17.420] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:53:36.516] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:53:36.520] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:53:48.623] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:53:48.627] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:54:02.729] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:54:02.732] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:54:13.820] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:54:13.824] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:54:16.918] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:54:16.921] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:54:31.004] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:54:31.007] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:55:58.116] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:55:58.119] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:56:12.206] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:56:12.209] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:56:40.314] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:56:40.317] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:56:47.409] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:56:47.412] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:57:11.506] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:57:11.509] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:57:15.604] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:57:15.607] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:57:37.756] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:57:37.759] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:57:42.852] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:57:42.863] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:57:54.958] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:57:54.961] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-03-31 10:58:32.062] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-03-31 10:58:32.064] [info] Loading persistent workspaces from Hyprland workspace rules
+sh: line 1: activate: command not found
