@@ -1,118 +1,47 @@
+
 {
+    // General Settings
+
+    // Position TOP
     "layer": "top",
+    "margin-bottom": 0,
+
+    // Position BOTTOM
+    // "position": "bottom",
+    // "margin-top": 0,
+    // "margin-bottom": 14,
+    
+    "layer": "top",
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    // Modules Left
     "modules-left": [
-        "clock",
-        "hyprland/window"
+        "custom/appmenu",
+        //"wlr/taskbar",
+        "hyprland/window",
     ],
+
+    // Modules Center
     "modules-center": [
         "hyprland/workspaces"
     ],
+
+    // Modules Right    
     "modules-right": [
         "pulseaudio",
+        "bluetooth",
+        "battery", 
         "network",
-        "cpu",
-        "memory",
-        "temperature",
-        "battery",
-        "tray"
-    ],
-    "hyprland/window": {
-        "format": "{title}",
-        "max-length": 333,
-        "seperate-outputs": true
-    },
-
-   "clock": {
-	"format": "<span foreground='#E69875'> </span><span>{:%I:%M %a %d}</span>",
-	"tooltip-format": "{calendar}",
-	  "calendar": {
-		"mode"          : "month",
-		"mode-mon-col"  : 3,
-		"on-scroll"     : 1,
-		"on-click-right": "mode",
-		"format": {
-		  "months":     "<span color='#D79921'><b>{}</b></span>",
-		  "days":       "<span color='#98971A'><b>{}</b></span>",
-		  "weeks":      "<span color='#458588'><b>{%W}</b></span>",
-		  "weekdays":   "<span color='#D79921'><b>{}</b></span>",
-		  "today":      "<span color='#D79921'><b>{}</b></span>"
-			  }
-		  },
-   "actions": {
-	 "on-click-middle": "mode",
-	 "on-click-right": "shift_up",
-		"on-click": "shift_down"	   
-     }
-   },
-    "hyprland/workspaces": {
-	"format": "{name}",
-	"active-only": false,
-	"sort-by-number": true,
-	"on-click": "activate",
-	"all-outputs": false
-    },
-    "network": {
-	"format": "󰤭 Off",
-	"format-wifi": "{essid} ({signalStrength}%)",
-	"format-ethernet": "<span foreground='#b48ead'>󰈀</span>",
-	"format-disconnected": "󰤭 Disconnected",
-	"tooltip-format": "{ifname} via {gwaddr} ",
-	"tooltip-format-wifi": "{essid}({signalStrength}%)  ",
-	"tooltip-format-ethernet": "󰈀 {ifname}",
-	"tooltip-format-disconnected": "Disconnected"
-   },  
-   "pulseaudio": {
-	"format": "<span foreground='#458588'>{icon}</span> {volume}%",
-	"format-bluetooth": "<span foreground='#458588'>󰂯</span> {volume}% ",
-	"format-bluetooth-muted": "<span foreground='#7A8478'>󰂲</span>",
-	"format-muted": "<span foreground='#CC241D'>󰖁</span>",
-	"format-icons": {
-	  "headphone": "",
-	  "default": ["", "", ""]
-	},
-	"on-click-left": "pavucontrol",
-	"input": true
-
-    },
-    "cpu": {
-	"format": "<span foreground='#D79921'> </span> {usage}%",
-        "states": {
-            "warning": 60,
-            "critical": 80
-        },
-        "tooltip": false,
-        "on-click": "kitty --class=htop -e htop"
-    },
-    "memory": {
-	"format": "<span foreground='#88C096'>󰍛 </span> {}%",
-	"interval": 1
-    },
-    "temperature": {
-        "tooltip": false,
-        "critical-threshold": 80,
-	"format": "<span foreground='#B16286'></span> {temperatureC}°C",
-	"interval": 1
-    },
-    "battery": {
-        "tooltip": true,
-        "tooltip-format": "{time}",
-        "states": {
-            "warning": 35,
-            "critical": 20
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "tray": {
-        "icon-size": 24,
-        "spacing": 1
-    }
+        "group/hardware",
+        "custom/cliphist",
+        "tray",
+        "custom/exit",
+        "clock"
+    ]
 }
+
