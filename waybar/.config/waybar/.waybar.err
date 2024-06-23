@@ -1,11 +1,11 @@
 
-(waybar:2488): Gtk-WARNING **: 11:33:30.321: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-06-23 11:33:30.364] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-06-23 11:33:30.364] [info] Including resource file: ~/.config/waybar/modules.json
-[2024-06-23 11:33:30.760] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-06-23 11:33:30.771] [info] Hyprland IPC starting
-[2024-06-23 11:33:30.791] [info] Loading persistent workspaces from Waybar config
-[2024-06-23 11:33:30.791] [info] Loading persistent workspaces from Hyprland workspace rules
-[2024-06-23 11:33:31.166] [info] Bar configured (width: 1920, height: 44) for output: eDP-1
-[2024-06-23 11:33:31.166] [error] Item '': No icon name or pixmap given.
-[2024-06-23 11:33:31.178] [error] Item '': No icon name or pixmap given.
+(waybar:4498): Gtk-WARNING **: 13:19:13.182: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-06-23 13:19:13.230] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-06-23 13:19:13.230] [info] Including resource file: ~/.config/waybar/modules.json
+[2024-06-23 13:19:13.235] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-06-23 13:19:13.245] [info] Hyprland IPC starting
+[2024-06-23 13:19:13.248] [info] Loading persistent workspaces from Waybar config
+[2024-06-23 13:19:13.248] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-23 13:19:13.576] [info] Bar configured (width: 1920, height: 44) for output: eDP-1
+[2024-06-23 13:19:13.576] [error] Item '': No icon name or pixmap given.
+[2024-06-23 13:19:13.593] [error] Item '': No icon name or pixmap given.
