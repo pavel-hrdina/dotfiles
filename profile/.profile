@@ -6,6 +6,7 @@
 # important for language settings, see below.
 
 test -z "$PROFILEREAD" && . /etc/profile || true
+test -r /home/pavel/.opam/opam-init/init.sh && . /home/pavel/.opam/opam-init/init.sh >/dev/null 2>/dev/null || true
 
 # Some applications read the EDITOR variable to determine your favourite text
 # editor. So uncomment the line below and enter the editor of your choice :-)
@@ -25,8 +26,8 @@ test -z "$PROFILEREAD" && . /etc/profile || true
 #fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+if [ -d "$HOME/bin" ]; then
+	PATH="$HOME/bin:$PATH"
 fi
 
 . "$HOME/.cargo/env"

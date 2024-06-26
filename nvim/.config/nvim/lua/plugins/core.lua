@@ -26,6 +26,14 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
+        ocamllsp = {
+          -- cmd = { ... }
+          filetypes = { "ml", "ocaml", "reason" },
+          -- capabilities = { ... }
+          settings = {
+            extendedHover = { true },
+          },
+        },
         bashls = {},
         cssls = {},
         terraformls = {},
@@ -105,6 +113,7 @@ return {
           "vim",
           "yaml",
           "css",
+          "ocaml",
         },
       },
     },
