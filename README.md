@@ -6,8 +6,7 @@
 </div>
 
 <div align="center">
-    <img src="" alt="banner" width="auto"/>
-    <p>New banner in the making</p>
+    <img src="./pictures/screenshot.png" alt="banner" width="auto"/>
 </div>
 
 ## Packages
