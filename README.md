@@ -6,7 +6,8 @@
 </div>
 
 <div align="center">
-    <img src="https://files.catbox.moe/wfjep2.png" alt="banner" width="1000"/>
+    <img src="" alt="banner" width="auto"/>
+    <p>New banner in the making</p>
 </div>
 
 ## Packages
