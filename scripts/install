@@ -31,6 +31,18 @@ readonly F_DIM="\033[2m"
 USER_HOME=$(getent passwd ${SUDO_USER:-$USER} | cut -d: -f6)
 readonly USER_HOME
 
+echo -e "${C_OLIVE}"
+cat <<"EOF"
+██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗
+██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝
+██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  
+██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  
+╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗
+ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+                                                              
+EOF
+echo -e "${NO_FORMAT}"
+
 echo -e "
 ----------------------------------------------------------
    ${F_BOLD}${C_OLIVE}
@@ -42,16 +54,6 @@ github:         https://github.com/Pavel-Hrdina/dotfiles
 "
 set -eo pipefail
 
-#######################################
-# A simple error function that prints
-# time on failure.
-# Globals:
-#   None
-# Arguments:
-#   None
-# Outputs:
-#   Writes error to STDERR
-#######################################
 err() {
 	echo -e "${F_DIM}err: [$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*${NO_FORMAT}\n" >&2
 }
@@ -64,7 +66,6 @@ fi
 echo -e "${F_DIM}Check operating system...${NO_FORMAT}\n" >&2
 
 # Try using zypper to determine OS
-# SUSE
 if zypper -n --version; then
 	echo -e "\n${F_DIM}Running openSUSE, continue...${NO_FORMAT}\n" >&2
 else
