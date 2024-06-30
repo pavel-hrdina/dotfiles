@@ -1,9 +1,36 @@
 
-(waybar:2443): Gtk-WARNING **: 14:34:46.432: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
-[2024-06-26 14:34:46.475] [info] Using configuration file /home/pavel/.config/waybar//config
-[2024-06-26 14:34:46.476] [info] Including resource file: ~/.config/waybar/modules.json
-[2024-06-26 14:34:46.859] [info] Using CSS file /home/pavel/.config/waybar//style.css
-[2024-06-26 14:34:46.870] [info] Hyprland IPC starting
-[2024-06-26 14:34:46.949] [info] Loading persistent workspaces from Waybar config
-[2024-06-26 14:34:46.950] [info] Loading persistent workspaces from Hyprland workspace rules
-[2024-06-26 14:34:47.314] [info] Bar configured (width: 1920, height: 44) for output: eDP-1
+(waybar:2372): Gtk-WARNING **: 15:12:33.295: Theme parsing error: gtk.css:6703:68: Invalid name of pseudo-class
+[2024-06-30 15:12:33.320] [info] Using configuration file /home/pavel/.config/waybar//config
+[2024-06-30 15:12:33.320] [info] Including resource file: ~/.config/waybar/modules.json
+[2024-06-30 15:12:33.556] [info] Using CSS file /home/pavel/.config/waybar//style.css
+[2024-06-30 15:12:33.561] [info] Hyprland IPC starting
+[2024-06-30 15:12:33.600] [info] Loading persistent workspaces from Waybar config
+[2024-06-30 15:12:33.600] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-30 15:12:33.807] [error] Invalid Status Notifier Item: :1.29, /org/blueman/sni
+[2024-06-30 15:12:33.820] [info] Bar configured (width: 1920, height: 43) for output: eDP-1
+
+(waybar:2372): LIBDBUSMENU-GLIB-WARNING **: 15:12:34.404: Unable to replace properties on 0: Error getting properties for ID
+[2024-06-30 15:18:46.746] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-30 15:18:46.747] [info] Loading persistent workspaces from Waybar config
+[2024-06-30 15:18:46.747] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-30 15:20:07.848] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-30 15:20:07.849] [info] Loading persistent workspaces from Waybar config
+[2024-06-30 15:20:07.849] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-30 15:20:12.918] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-30 15:20:12.920] [info] Loading persistent workspaces from Waybar config
+[2024-06-30 15:20:12.920] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-30 15:20:18.980] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-30 15:20:18.980] [info] Loading persistent workspaces from Waybar config
+[2024-06-30 15:20:18.980] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:2372): LIBDBUSMENU-GLIB-WARNING **: 15:22:36.124: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2372): LIBDBUSMENU-GLIB-WARNING **: 15:22:38.529: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:2372): LIBDBUSMENU-GLIB-WARNING **: 15:22:38.631: Unable to replace properties on 0: Error getting properties for ID
+[2024-06-30 15:31:57.219] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-30 15:31:57.220] [info] Loading persistent workspaces from Waybar config
+[2024-06-30 15:31:57.220] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-30 15:32:06.277] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-30 15:32:06.278] [info] Loading persistent workspaces from Waybar config
+[2024-06-30 15:32:06.278] [info] Loading persistent workspaces from Hyprland workspace rules
