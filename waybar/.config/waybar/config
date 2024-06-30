@@ -1,16 +1,8 @@
-
 {
     // General Settings
-
-    // Position TOP
     "layer": "top",
+    "margin-top": 0,
     "margin-bottom": 0,
-
-    // Position BOTTOM
-    // "position": "bottom",
-    // "margin-top": 0,
-    // "margin-bottom": 14,
-    
     "layer": "top",
     "margin-left": 0,
     "margin-right": 0,    
@@ -22,7 +14,7 @@
     // Modules Left
     "modules-left": [
         "custom/appmenu",
-        //"wlr/taskbar",
+        "wlr/taskbar",
         "hyprland/window",
     ],
 
@@ -38,10 +30,7 @@
         "battery", 
         "network",
         "group/hardware",
-        "custom/cliphist",
         "tray",
-        "custom/exit",
         "clock"
     ]
 }
-
