@@ -7,7 +7,7 @@
 
 <div align="center">
     <img src="./pictures/screenshot.png" alt="banner" width="auto"/>
-</div>
+<div>
 
 ## Packages
 

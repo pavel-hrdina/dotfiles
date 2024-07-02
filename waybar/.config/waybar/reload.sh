@@ -10,6 +10,6 @@ trap "killall waybar" EXIT
 
 while true; do
 	waybar --config $CONFIG_PATH --style $STYLE_PATH >$WAYBAR_FOLDER/.waybar.err 2>&1 &
-	inotifywait -e create,modify "$CONFIG_FILES"
+	inotifywait -e create,modify $CONFIG_FILES
 	killall waybar 2>/dev/null
 done
