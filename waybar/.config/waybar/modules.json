@@ -27,6 +27,10 @@
         },
     },
 
+    "hyprland/language": {
+        "format": "{}"
+    },
+
     // Hyprland Window
     "hyprland/window": {
        "separate-outputs": true
@@ -37,29 +41,20 @@
         "format": ""
     },
 
-    // Windows VM
-//   "custom/windowsvm": {
-//      "format": "",
-//       "on-click": "~/dotfiles/scripts/launchvm.sh",
-//       "tooltip": false
-//   },
-
     // Rofi Application Launcher
     "custom/appmenu": {
         // START APPS LABEL
         "format": "Apps",
         // END APPS LABEL
         "on-click": "sleep 0.2;rofi -show drun -replace",
-        "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
-        "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
+        "tooltip-format": "Left: Open the application launcher"
     },
 
     // Rofi Application Launcher
     "custom/appmenuicon": {
         "format": "",
         "on-click": "rofi -show drun -replace",
-        "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
-        "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
+        "tooltip-format": "Left: Open the application launcher"  /* "Left: Open the application launcher\nRight: Show all keybindings" */,
     },    
 
     // Keyboard State
