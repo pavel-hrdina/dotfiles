@@ -13,20 +13,20 @@ iatest=$(expr index "$-" i)
 test -s ~/.alias && . ~/.alias || true
 
 # set PATH so it includes user's private ~/.local/bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+	PATH="$HOME/.local/bin:$PATH"
 fi
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
+	. /etc/bashrc
 fi
 
 # Enable bash programmable completion features in interactive shells
 if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
+	. /usr/share/bash-completion/bash_completion
 elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+	. /etc/bash_completion
 fi
 
 # Disable the bell
@@ -52,7 +52,6 @@ export LS_COLORS='no=00:fi=00:di=00;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 
-
 # Color for manpages in less makes manpages a little easier to read
 export LESS_TERMCAP_mb=$'\E[01;31m'
 export LESS_TERMCAP_md=$'\E[01;31m'
@@ -70,25 +69,31 @@ tty -s && export PS1="\[$(tput setaf 2)\]\u@\h:\[$(tput setaf 6)\]\w\[$(tput set
 #######################################################
 
 gcom() {
-    git add .
-    git commit -S -m "$1"
+	git add .
+	git commit -S -m "$1"
 }
 
 lazyg() {
-    git add .
-    git commit -S -m "$1"
-    git push
+	git add .
+	git commit -S -m "$1"
+	git push
 }
 
 glog() {
-    git log --graph \
-        --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
-        --abbrev-commit
+	git log --graph \
+		--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
+		--abbrev-commit
 }
 
 # copy files from $1 to $2
 rsyncc() {
-    rsync -P -v -z ‐‐compress‐choice=zstd -a "$1" "$2"
+	rsync -P -v -z ‐‐compress‐choice=zstd -a "$1" "$2"
+}
+
+addToPath() {
+	if [[ "$PATH" != *"$1"* ]]; then
+		export PATH=$1:$PATH
+	fi
 }
 
 #######################################################
@@ -99,8 +104,7 @@ rsyncc() {
 # GENERAL ALIAS'S
 #######################################################
 # Map vim to nvim
-alias vim=nvim
+alias vimdiff='nvim -d'
+export EDITOR=nvim
 
-# POKEMON!
-#pokemon-colorscripts --no-title -n kangaskhan
-source $HOME/.cargo/env
+addToPath "$HOME/.zig"

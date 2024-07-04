@@ -47,7 +47,6 @@ return {
       opts.sources = vim.list_extend(opts.sources or {}, {
         -- Add formateers here using https://github.com/nvimtools/none-ls.nvim/blob/main/doc/BUILTINS.md
         nls.builtins.formatting.stylua,
-        nls.builtins.formatting.ocamlformat,
       })
     end,
   },
@@ -66,14 +65,6 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        ocamllsp = {
-          -- cmd = { ... }
-          filetypes = { "ml", "ocaml", "reason" },
-          -- capabilities = { ... }
-          settings = {
-            extendedHover = { true },
-          },
-        },
         bashls = {},
         cssls = {},
         terraformls = {},
@@ -153,7 +144,6 @@ return {
           "vim",
           "yaml",
           "css",
-          "ocaml",
         },
       },
     },
