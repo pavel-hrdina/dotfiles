@@ -103,8 +103,5 @@ addToPath() {
 #######################################################
 # GENERAL ALIAS'S
 #######################################################
-# Map vim to nvim
-alias vimdiff='nvim -d'
-export EDITOR=nvim
 
 addToPath "$HOME/.zig"
