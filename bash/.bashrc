@@ -30,7 +30,7 @@ elif [ -f /etc/bash_completion ]; then
 fi
 
 # Disable the bell
-set bell-style none
+if [[ $iatest -gt 0 ]]; then bind "set bell-style none"; fi
 
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
