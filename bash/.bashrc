@@ -30,7 +30,7 @@ elif [ -f /etc/bash_completion ]; then
 fi
 
 # Disable the bell
-if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
+set bell-style none
 
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
@@ -105,3 +105,5 @@ addToPath() {
 #######################################################
 
 addToPath "$HOME/.zig"
+
+. /home/pavel/_zig.bash

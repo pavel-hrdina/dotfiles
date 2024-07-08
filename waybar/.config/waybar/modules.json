@@ -24,7 +24,7 @@
         },
         "persistent-workspaces": {
             "*": 4
-        },
+        }
     },
 
     "hyprland/language": {

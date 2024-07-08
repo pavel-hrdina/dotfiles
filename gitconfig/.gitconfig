@@ -1,0 +1,8 @@
+[user]
+	name = Pavel Hrdina
+	email = pavel.hrdina.ml@seznam.cz
+	signingkey = D039B95A984C1CFFF3AAE149CA71680E8E48695D
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = master
