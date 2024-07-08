@@ -1,41 +1,40 @@
-window {
-margin: 0px;
-border: 1px solid rgb(152,151,26);
-border-radius: 10px;
-font-size: 20px;
-background-color: #282828;
+* {
+  font-family: FiraCode;
+  color: #FBF1C7;
+  background: transparent;
+}
+
+#window {
+  background: rgba(40, 40, 40, 0.5);
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #D65D0E;
 }
 
 #input {
-margin: 5px;
-border: none;
-color: #ebdbb2;
-background-color: #1d2021;
-}
-
-#inner-box {
-margin: 5px;
-border: none;
-background-color: #282828;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 #outer-box {
-margin: 5px;
-border: none;
-background-color: #282828;
+  padding: 20px;
 }
 
-#scroll {
-margin: 0px;
-border: none;
+#img {
+  margin-right: 6px;
 }
 
-#text {
-margin: 5px;
-border: none;
-color: #ebdbb2;
+#entry {
+  padding: 10px;
+  border-radius: 15px;
 }
 
 #entry:selected {
-background-color: #1d2021;
+  background-color: #458588;
+}
+
+#text {
+  margin: 2px;
 }
