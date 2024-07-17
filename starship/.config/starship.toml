@@ -48,7 +48,7 @@ style = "bg:color_orange fg:color_fg0"
 [os.symbols]
 Windows = "󰍲"
 Ubuntu = "󰕈"
-SUSE = ""
+openSUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
 Macos = "󰀵"
