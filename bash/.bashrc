@@ -52,18 +52,6 @@ export LS_COLORS='no=00:fi=00:di=00;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 
-# Color for manpages in less makes manpages a little easier to read
-export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01;31m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;44;33m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;32m'
-
-# Colored bash
-tty -s && export PS1="\[$(tput setaf 2)\]\u@\h:\[$(tput setaf 6)\]\w\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-
 #######################################################
 # FUNCTIONS
 #######################################################
@@ -96,14 +84,14 @@ addToPath() {
 	fi
 }
 
-#######################################################
-# MACHINE SPECIFIC ALIAS'S
-#######################################################
-
-#######################################################
-# GENERAL ALIAS'S
-#######################################################
+####################################################
+# Sourcing files
+##################################################
 
 addToPath "$HOME/.zig"
 
 . /home/pavel/_zig.bash
+
+# Color for manpages in less makes manpages a little easier to read
+# Colored bash using starshit
+eval "$(starship init bash)"
