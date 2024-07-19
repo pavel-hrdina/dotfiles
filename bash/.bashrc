@@ -89,6 +89,7 @@ addToPath() {
 ##################################################
 
 addToPath "$HOME/.zig"
+addToPath "$HOME/.eww/target/release/"
 
 . /home/pavel/_zig.bash
 
