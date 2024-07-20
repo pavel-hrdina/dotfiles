@@ -24,11 +24,11 @@ function check_workspaces() {
     active_workspace=`hyprctl activeworkspace -j | jq -r '.name'`
     persistent_workspaces='
       [
-        {"name": "1", "active": false},
-        {"name": "2", "active": false},
-        {"name": "3", "active": false},
-        {"name": "4", "active": false},
-        {"name": "5", "active": false}
+        {"name": "1", "text": "󰞷", "active": false},
+        {"name": "2", "text": "2", "active": false},
+        {"name": "3", "text": "3", "active": false},
+        {"name": "4", "text": "5", "active": false},
+        {"name": "5", "text": "6", "active": false}
       ]
     '
 
@@ -37,4 +37,4 @@ function check_workspaces() {
 }
 
 check_workspaces "workspace"
-socat -u "UNIX-CONNECT:/$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock" - | while read -r line; do check_workspaces "$line"; done
+socat -u UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock - | while read -r line; do check_workspaces "$line"; done
