@@ -1,4 +1,4 @@
 #!/bin/sh
 
-~/Apps/Obsidian.AppImage --enable-features=UseOzonePlatform --ozone-platform=wayland > /dev/null 2>&1 &
+~/apps/Obsidian.AppImage --enable-features=UseOzonePlatform --ozone-platform=wayland > /dev/null 2>&1 &
 
