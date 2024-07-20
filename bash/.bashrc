@@ -88,7 +88,7 @@ addToPath() {
 # Sourcing files
 ##################################################
 
-addToPath "$HOME/bin/"
+addToPath "$HOME/.bin"
 addToPath "$HOME/.zig"
 addToPath "$HOME/.eww/target/release/"
 
