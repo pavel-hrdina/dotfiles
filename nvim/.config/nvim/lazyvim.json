@@ -1,9 +1,0 @@
-{
-  "extras": [
-    "lazyvim.plugins.extras.formatting.black"
-  ],
-  "news": {
-    "NEWS.md": "6077"
-  },
-  "version": 6
-}
