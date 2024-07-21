@@ -6,7 +6,8 @@
 </div>
 
 <div align="center">
-    <img src="./pictures/screenshot.png" alt="banner" width="auto">
+    > TODO: Add an image of the system to docs
+    <img src="" alt="banner" width="auto">
 </div>
 
 ## Packages
@@ -23,7 +24,7 @@ it'll be done when it's done.)
 > Examine the script thoroughly before executing it on your system,
 > as it may cause harm to your system. I have not tested this
 > configuration on Linux distributions other than openSUSE Trumbleweed,
-> so use it with caution, but it should work. If anything breaks during 
+> so use it with caution, but it should work. If anything breaks during
 > the installation, make sure that is's not your systems fault
 
 > [!NOTE]
