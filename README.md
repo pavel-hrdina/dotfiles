@@ -5,8 +5,7 @@
     <h3></h3>
 </div>
 
-> TODO: Add an image of the system to docs
-> old system screenshot in [here](./pictures/screenshot.png)
+> TODO: Add an image of the system to docs... old system screenshot in [here](./pictures/screenshot.png)
 
 <div align="center">
     <img src="" alt="banner" width="auto">
