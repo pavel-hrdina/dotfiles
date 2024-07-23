@@ -8,8 +8,8 @@
 #
 #  Pavel Hrdina 2024
 
-# enable vi mode
-set -o vi
+# enable vi mode / does not work well
+# set -o vi
 
 iatest=$(expr index "$-" i)
 
