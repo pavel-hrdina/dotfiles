@@ -6,7 +6,6 @@ return {
     'nvim-tree/nvim-web-devicons',
     'MunifTanjim/nui.nvim',
   },
-  ft = 'netrw', -- load when netrw opens to replace it
   cmd = 'Neotree',
   -- Hijacking netrw when loading neo-tree lazily (https://github.com/nvim-neo-tree/neo-tree.nvim/issues/1247)
   init = function()
