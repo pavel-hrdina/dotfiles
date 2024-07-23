@@ -8,6 +8,9 @@
 #
 #  Pavel Hrdina 2024
 
+# enable vi mode
+set -o vi
+
 iatest=$(expr index "$-" i)
 
 test -s ~/.alias && . ~/.alias || true
@@ -97,3 +100,11 @@ addToPath "$HOME/.eww/target/release/"
 # Color for manpages in less makes manpages a little easier to read
 # Colored bash using starshit
 eval "$(starship init bash)"
+
+####################################################
+# Aliases
+##################################################
+
+# Eza
+alias l="eza -l --icons --git -a"
+alias lt="eza --tree --level=2 --long --icons --git"
