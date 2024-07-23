@@ -70,6 +70,10 @@ vim.opt.scrolloff = 10
 -- use the formatting concealment features
 vim.opt.conceallevel = 1
 
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -249,8 +253,6 @@ require('lazy').setup({
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
       require('telescope').setup {
-        -- You can put your default mappings / updates / etc. in here
-        --  All the info you're looking for is in `:help telescope.setup()`
         defaults = {
           mappings = {
             i = { ['<c-enter>'] = 'to_fuzzy_refine' },
@@ -258,6 +260,10 @@ require('lazy').setup({
         },
         pickers = {},
         extensions = {
+          wrap_results = true,
+
+          fzf = {},
+
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
           },
@@ -757,9 +763,6 @@ require('lazy').setup({
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
-  --
-  --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
   { import = 'custom.plugins' },
 }, {
   ui = {
