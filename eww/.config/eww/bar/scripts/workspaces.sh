@@ -27,8 +27,8 @@ function check_workspaces() {
         {"name": "1", "text": "󰞷", "active": false},
         {"name": "2", "text": "2", "active": false},
         {"name": "3", "text": "3", "active": false},
-        {"name": "4", "text": "5", "active": false},
-        {"name": "5", "text": "6", "active": false}
+        {"name": "4", "text": "4", "active": false},
+        {"name": "5", "text": "5", "active": false}
       ]
     '
 
