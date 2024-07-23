@@ -47,8 +47,8 @@ return {
   },
   opts = {
     filesystem = {
+      hijack_netrw_behavior = 'open_current',
       filtered_items = {
-        hijack_netrw_behavior = 'open_current',
         use_libuv_file_watcher = true,
         visible = true,
         hide_dotfiles = false,
