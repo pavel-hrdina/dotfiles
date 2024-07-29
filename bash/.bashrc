@@ -86,6 +86,7 @@ addToPath() {
 ##################################################
 
 addToPath "$HOME/.bin"
+addToPath "$HOME/apps"
 addToPath "$HOME/.zig"
 addToPath "$HOME/.eww/target/release/"
 
