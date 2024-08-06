@@ -8,7 +8,7 @@
 > TODO: Add an image of the system to docs... old system screenshot in [here](./pictures/screenshot.png)
 
 <div align="center">
-    <img src="" alt="banner" width="auto">
+    <img src="./pictures/screenshot_1.png" alt="banner" width="auto">
 </div>
 
 ## Packages
