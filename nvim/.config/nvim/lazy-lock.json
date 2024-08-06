@@ -8,6 +8,7 @@
   "crates.nvim": { "branch": "main", "commit": "1c924d5a9ea3496c4e1a02d0d51388ba809f8468" },
   "fidget.nvim": { "branch": "main", "commit": "d855eed8a06531a7e8fd0684889b2943f373c469" },
   "gruvbox-material": { "branch": "master", "commit": "91f8170a31ae6e31670629cd339df297dbd5fd5f" },
+  "hardtime.nvim": { "branch": "main", "commit": "91c6be1a54fa057002e21ae209a49436bd215355" },
   "heirline-components.nvim": { "branch": "main", "commit": "afac96bc6b203a6dc5dcf345ffc238d560fda4e7" },
   "heirline.nvim": { "branch": "master", "commit": "0d797435e54645a5f98bad7ad6046aac1ef95c1e" },
   "indent-blankline.nvim": { "branch": "master", "commit": "65e20ab94a26d0e14acac5049b8641336819dfc7" },
