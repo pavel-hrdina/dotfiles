@@ -4,6 +4,7 @@
 (deflisten _workspaces :inital "[]" `~/.config/eww/bar/scripts/workspaces.sh`)
 (deflisten _active_window :inital "~" `~/.config/eww/bar/scripts/activewindow.sh`)
 (defpoll   _current_date :interval "1s" `~/.config/eww/bar/scripts/current_date.sh`)
+(defpoll _battery :interval "30s" "~/.config/eww/bar/scripts/battery.sh")
 
 (defwindow bar
   :monitor 0
@@ -55,9 +56,17 @@
   (box
     :halign "end"
     :space-evenly false
-
+    
+    
     (systray
       :class "systray"
+      :orientation "h"
+      :icon-size 16
+      :space-evenly true
+      :spacing 8
+    )
+    
+    (Battery
       :orientation "h"
       :icon-size 16
       :space-evenly true
@@ -70,7 +79,6 @@
           :class "power_menu"
           :onclick `~/.config/rofi/applets/bin/powermenu.sh`
           :timeout "30s"
-
           "󰐥"
         )
       )
@@ -128,5 +136,15 @@
     (label
       :text {_current_date}
     )
+  )
+)
+
+(defwidget Battery []
+  (box
+    :class "battery"
+    :space-evenly false
+    (label :class "battery-icon ${_battery.class}" :text {_battery.icon})
+    (box :width 5)
+    (label :class "battery-percentage ${_battery.class}" :text "${_battery.percentage}%")
   )
 )

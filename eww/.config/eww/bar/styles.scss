@@ -10,7 +10,9 @@
       &.active {
         background-color: $blue;
 
-        & label { color: $bg; }
+        & label {
+          color: $bg;
+        }
       }
     }
   }
@@ -20,13 +22,46 @@
   }
 
   .power_menu {
-    background-color: $bgh;
+    background-color: $bg;
     font-size: 18px;
     padding-right: 3px;
     font-weight: 900;
     padding: 0 10px;
 
-    label { color: $red; }
+    label {
+      color: $red;
+    }
+  }
+
+  .battery {
+    padding: 0 10px;
+    padding-right: 3px;
+    background-color: $bg;
+  }
+
+  .battery-icon,
+  .battery-percentage {
+    font-weight: 900;
+
+    &.charging {
+      color: $green;
+    }
+
+    &.high {
+      color: $green;
+    }
+
+    &.medium {
+      color: $yellow;
+    }
+
+    &.low {
+      color: $orange;
+    }
+
+    &.critical {
+      color: $red;
+    }
   }
 }
 
