@@ -1,24 +1,68 @@
-#!/bin/bash
-#
-#      ____  ___   _____ __  ______  ______
-#     / __ )/   | / ___// / / / __ \/ ____/
-#    / __  / /| | \__ \/ /_/ / /_/ / /
-#   / /_/ / ___ |___/ / __  / _, _/ /___
-#  /_____/_/  |_/____/_/ /_/_/ |_|\____/
-#
+#!/usr/bin/env bash
 #  Pavel Hrdina 2024
 
-# enable vi mode / does not work well
-# set -o vi
+# If not running interactively, don't do anything:
+[ -z "${PS1:-}" ] && return
 
-iatest=$(expr index "$-" i)
-
-test -s ~/.alias && . ~/.alias || true
+[ -n "${PERLBREW_PERL:-}" ] && return
 
 # set PATH so it includes user's private ~/.local/bin if it exists
 if [ -d "$HOME/.local/bin" ]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
+
+# after cleanshell, not even $HOME is set, this messes up things that base off $HOME, like SDKman
+if [ -z "${HOME:-}" ]; then
+    export HOME=~
+fi
+
+# shut up Mac, Bash still rocks
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# ============================================================================ #
+
+# SECURITY TO STOP STUFF BEING WRITTEN TO DISK
+#unset HISTFILE
+#unset HISTFILESIZE
+export HISTSIZE=50000
+export HISTFILESIZE=50000
+
+rmhist(){ history -d "$1"; }
+histrm(){ rmhist "$1"; }
+histrmlast(){ history -d "$(history | tail -n 2 | head -n 1 | awk '{print $1}')"; }
+
+# This adds a time format of "YYYY-mm-dd hh:mm:ss  command" to the bash history
+export HISTTIMEFORMAT="%F %T  "
+
+# stop logging duplicate successive commands to history
+HISTCONTROL=ignoredups:ignorespace
+
+# Neat trick "[ \t]*" to exclude any command by just prefixing it with a space. Fast way of going stealth for pw entering on cli
+# & here means any duplicate patterns, others are simple things like built-ins and ls and stuff you don't need history for
+#export HISTIGNORE="[ \t]*:&:ls:[bf]g:exit"
+
+# append rather than overwrite history
+shopt -s histappend
+
+# check window size and update $LINES and $COLUMNS after each command
+shopt -s checkwinsize
+
+shopt -s cdspell
+
+# prevent core dumps which can leak sensitive information
+ulimit -c 0
+
+# tighten permissions except for root where library installations become inaccessible to my user account
+if [ $EUID = 0 ]; then
+    umask 0022
+else
+    # caused no end of problems when doing sudo command which retained 0077 and broke library access for user accounts
+    #umask 0077
+    umask 0022
+fi
+
+
+# ============================================================================ #
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -48,12 +92,6 @@ PROMPT_COMMAND='history -a'
 # Show auto-completion list automatically, without double tab
 if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
-# To have colors for ls and all grep commands such as grep, egrep and zgrep
-export CLICOLOR=1
-export LS_COLORS='no=00:fi=00:di=00;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:*.xml=00;31:'
-#export GREP_OPTIONS='--color=auto' #deprecated
-alias grep="/usr/bin/grep $GREP_OPTIONS"
-unset GREP_OPTIONS
 
 #######################################################
 # FUNCTIONS
@@ -84,13 +122,12 @@ addToPath() {
 ####################################################
 # Sourcing files
 ##################################################
-
-addToPath "$HOME/.bin"
+addToPath "$HOME/bin"
+addToPath "$HOME/.local/bin"
+addToPath "$HOME/.local/bin/zig"
 addToPath "$HOME/apps"
-addToPath "$HOME/.zig"
 addToPath "$HOME/.eww/target/release/"
-
-. /home/pavel/_zig.bash
+addToPath "$HOME/.cargo/bin"
 
 # Color for manpages in less makes manpages a little easier to read
 # Colored bash using starshit
@@ -126,3 +163,5 @@ alias ......="cd ../../../../.."
 # Eza
 alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
+. "$HOME/.cargo/env"
+. "/home/hrdina/.deno/env"
